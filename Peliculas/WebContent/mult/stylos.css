@@ -1,0 +1,649 @@
+A {text-decoration: none;  color :  #003399; }
+
+.amarillap  { 
+                font-size: 10px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #663333;
+                        text-decoration: none;
+               }
+.azulp  { 
+                font-size: 10px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #3E4866;
+                        text-decoration: none;
+               }
+
+.azul-p {
+        font-size: 10px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: Navy;
+                        text-decoration: none;
+}
+
+.azul   { 
+                font-size: 12px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #3E4866;
+                        }
+.azulclaro   { 
+                font-size: 12px;
+                font-family: Times New Romans, Times;
+                font-variant: normal;
+                font-style: normal;
+                color: #314785;
+                        }
+.azultop   { 
+                font-size: 11px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #3E4866;
+                        }
+.blanca  { 
+                font-size: 14px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #FFFFFF;
+                                font-weight: bold;
+                        text-decoration: none;
+               }
+
+.bva-blanca {
+        font-size: 10pt;
+        font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        font-variant: normal;
+        font-style: normal;
+        color: #FFFFFF;
+        font-weight: bold;
+        text-decoration: none;
+        margin : 2px;
+}
+
+.blancap2  { 
+                font-size: 8pt;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                color: #FFFFFF;
+                        text-decoration: none;
+               }
+.blancap3  { 
+                font-size: 9pt;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                color: #FFFFFF;
+                        text-decoration: none;
+               }
+
+
+.blancap  { 
+                font-size: 8pt;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #FFFFFF;
+               }
+
+
+.bola  { 
+                font-size: 14px;
+                font-family: Times New Roman, Times;
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                color: #990033;
+               }
+.bolaopor  { 
+                font-size: 12px;
+                font-family: Times New Roman, Times;
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                color: #990033;
+               }
+
+.bolona  { 
+                font-size: 20px;
+                font-family: Times New Roman, Times;
+                font-variant: normal;
+                font-style: normal;
+                color: #990033;
+               }
+.cabecera  { 
+                font-size: 16px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                color: #FFD807;
+                    text-decoration: none;
+               }
+
+.oportunidad  { 
+                font-size: 13px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                        font-weight: bold;
+                color: #990033;
+                        text-decoration: none;
+               }
+
+.oportunidada  { 
+                font-size: 13px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                        font-weight: bold;
+                color: #19317D;
+                        text-decoration: none;
+               }
+.oportunidadap  { 
+                font-size: 12px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                    font-weight: bold;
+                color: #19317D;
+                    text-decoration: none;
+               }
+
+
+
+.contenido  { 
+                font-size: 9pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: normal;
+                                color: #000000;
+                text-decoration: none;
+               }
+
+.bva-contenido {
+        font-size: 9pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-variant: normal;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+        margin : 4px;
+}
+
+.bva-boldblue {
+        font-size: 9pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        color: #000066;
+}
+
+.bva-boldgreen {
+        font-size: 9pt;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        color: #003333;
+}
+
+
+
+
+.bva-formularios {
+        font-size: 7pt;
+        font-family: Arial, Helvetica,Verdana, sans-serif;
+        font-variant: normal;
+        font-style: normal;
+        font-weight: normal;
+        color: #000000;
+}
+
+
+.contenido2  { 
+                font-size: 9pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                    font-weight: normal;
+                    color: #373D4D;
+                text-decoration: none;
+               }
+.direccion  { 
+                font-size: 10px;
+                font-family: Verdana, Arial, Helvetica; 
+                font-variant: normal;
+                font-style: normal;
+                color: #2B4F92;
+                text-decoration: none;                          
+               }
+.direcciong  { 
+                font-size: 10px;
+                font-family: Verdana, Arial, Helvetica; 
+                font-variant: normal;
+                font-style: normal;
+                color: #666666;
+                text-decoration: none;                          
+               }
+
+.direccionn {
+        font-size: 10px;
+                font-family: Verdana, Arial, Helvetica; 
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+                text-decoration: none;
+}
+
+
+{ 
+                font-size: 10px;
+                font-family: Verdana, Arial, Helvetica; 
+                font-variant: normal;
+                font-style: normal;
+                color: #737373;
+                text-decoration: none;                          
+               }
+
+.fecha  {
+                font-size: 9pt;
+                font-family: Times New Roman, Times, serif;
+                font-variant: normal;
+                font-style: italic;
+                color: #ffffff;
+               }
+
+.bva-fecha {
+        font-size: 8pt;
+                font-family: Times New Roman, Times, serif;
+                font-variant: normal;
+                font-style: italic;
+                color: #FFFFFF;
+}
+
+
+.fechan  {
+                font-size: 9pt;
+                font-family: Times New Roman, Times, serif;
+                font-variant: normal;
+                font-style: normal;
+                color: #676767;
+               }
+                           
+
+.menu  { 
+                font-size: 10px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: normal;
+                color: #230771;
+               }
+.menu1  { 
+                font-size: 12px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: normal;
+                color: #230771;
+               }
+.minusculo  { 
+                font-size: 8pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                                color: #000000;
+                text-decoration: none;
+               }        
+.negra  { 
+                font-size: 12px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+                    text-decoration: none;
+               }
+.negrap  { 
+                font-size: 10px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+                        text-decoration: none;
+               }
+
+.bva-negrap {
+        font-size: 10px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+                        text-decoration: none;
+}
+
+
+.negrap2  { 
+                font-size: 8pt;
+                font-family: Helvetica, sunserif, Arial;
+                font-variant: normal;
+                font-style: normal;
+                color: #1D202E;
+                        text-decoration: none;
+               }
+.negrapp  { 
+                font-size: 7pt;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+                        text-decoration: none;
+               }
+.noticias  { 
+                font-size: 9pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                font-weight: bold;
+                color: #000000;
+               }
+
+.noticias_gris  { 
+                font-size: 9pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                    font-weight: bold;
+                color: #C0C0C0;
+               }
+.noticiasgris  { 
+                font-size: 9pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                        font-weight: bold;
+                color: #6F6F6F;
+               }
+.noticiasgris1  { 
+                font-size: 9pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                color: #6F6F6F;
+               }
+
+.oportunigris  { 
+                font-size: 10pt;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: normal;
+                        font-weight: normal;
+                color: #19317D;
+               }
+
+.negrab  { 
+                font-size: 11px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+                                font-weight: bold;
+                        text-decoration: none;
+               }
+.opciones  { 
+                font-size: 16px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: normal;
+                color: #230771;
+               }
+.pie  { 
+                font-size: 12px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: normal;
+                color: #666696;
+               }
+.preg  { 
+                font-size: 12px;
+                font-family: Arial, Helvetica, serif;
+                font-variant: normal;
+                font-style: normal;
+                color: #990033;
+               }                           
+.prensa  { 
+                font-size: 18px;
+                font-family: Courier; 
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+               }                           
+.productos  { 
+                font-size: 11px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #3E4866;
+                    
+               }
+.productosg  { 
+                font-size: 13px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #3E4866;     
+               }
+.roja  { 
+                font-size: 12px;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #980032;
+                    text-decoration: none;
+               }
+.rojap  { 
+                font-size: 8pt;
+                font-family: Arial, Helvetica, sunserif;
+                font-variant: normal;
+                font-style: normal;
+                color: #980032;
+                        text-decoration: none;
+               }
+.secciones  { 
+                font-size: 8pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+                text-decoration: none;
+               }
+                           
+.secciones-azul  { 
+                line-height: 10px;
+                font-size: 8pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                color:  #230771;
+                text-decoration: none;
+               }
+                           
+.secciones2  { 
+                font-size: 9pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                color: #222222;
+                text-decoration: none;
+               }
+.subseccion  { 
+                font-size: 8pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                color: #F0C000;
+               }
+.texto  { 
+                font-size: 12px;
+                font-family: "Times New Roman", Times; 
+                font-variant: normal;
+                font-style: normal;
+                color: #230771;
+                font-weight: bold;
+                text-decoration: none;                          
+               }
+.textob  { 
+                font-size: 14px;
+                font-family: Times New Roman, Times;
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                color: #ffffff;
+               }
+
+.bva-textob-bold {
+        font-size: 10pt;
+                font-family: "Times New Roman", Times, serif;
+                font-style: normal;
+                                font-weight: bold;
+                color: #FFFFFF;
+}
+
+.bva-textob {
+        font-size: 12pt;
+                font-family: Times New Roman, Times;
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: normal;
+                color: #FFFFFF;
+}
+
+
+.bva-texto {
+        font-size: 14pt;
+                font-family: Times New Roman, Times;
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: normal;
+                color: #FFFFFF;
+}
+
+
+ .titulo  { 
+                font-size: 15px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: italic;
+                        font-weight: bold;
+                color: #230771;
+               }
+.titulogris  { 
+                font-size: 15px;
+                font-family: Arial, Helvetica; 
+                font-variant: normal;
+                font-style: italic;
+                        font-weight: bold;
+                color: #989898;
+               }
+
+.bva-tituloazul {
+        font-size: 11pt;
+                font-family: Arial, Helvetica;
+                font-style: italic;
+                        font-weight: bold;
+                color: #003399;
+}
+
+.bva-tituloblanco {
+        font-size: 11pt;
+                font-family: Arial, Helvetica;
+                font-style: italic;
+                        font-weight: bold;
+                color: White;
+}
+
+
+.texton         { 
+                font-size: 16px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+               }
+               
+
+.bva-titulop  { 
+                font-size: 12px;
+                font-family: "Times New Roman", Times, serif;
+                font-variant: normal;
+                font-style: italic;
+                color: #000000;
+                        text-decoration: none;
+               }
+                           
+.bva-secciones  { 
+                font-size: 8pt;
+                font-family: Arial, Helvetica, serif; 
+                font-variant: normal;
+                font-style: normal;
+                color: #000000;
+                text-decoration: none;
+               }
+
+.titular  { 
+                font-size: 18px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                        text-decoration: none;                          
+                color: #230771;
+               }
+
+.titular2  { 
+                font-size: 18px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                        text-decoration: none;                          
+                color: #5983E3;
+               }
+
+.titular3  { { 
+                font-size: 12px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: italic;
+                        font-weight: bold;
+                color: #230771;
+               }
+
+.titular4  { 
+                font-size: 14px;
+                font-family: Times New Roman, Times; 
+                font-variant: normal;
+                font-style: normal;
+                                font-weight: bold;
+                        text-decoration: none;                          
+                color: #230771;
+               }
+.usuario  {
+                font-size: 8pt;
+                font-family: Arial, Helvetica;
+                font-variant: normal;
+                font-style: normal;
+                        font-weight: bold;
+                color: #000000;
+               }
+               
+               

@@ -1,0 +1,490 @@
+// -------------------------------------------------------           
+// Menú BBVA Net Normal 
+// ------------------------------------------------------- 
+function addop(a,b,c,d)
+{	a="Nivel_"+a;
+	b=(b==1)?true:false;
+	d=( d.indexOf("?i=") > -1 )? "carga.jsp"+d : d;
+	mimenu.annade_opcion(a, b,c,d);
+}
+function cargaOpciones(){
+
+addop("1",1,"Menu","");
+
+addop("2",1,"Posición Clientes","AccesoXNombreyNIF.html");
+addop("3",1,"","");
+	addop("4",1,"Consultar","posicion_global.html");
+		addop("5",1,"Detallada","posicion_global.html");
+		addop("5",1,"Resumida","posicion_glob_int.html");
+	addop("4",1,"Información y contratación","posicion_global_grafica_resumida.html"); 
+		addop("5",1,"BBVA net plus","posicion_global_grafica_resumida.html");
+		addop("5",1,"Net Office","default.html");
+addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+addop("t",1,"Avisos en el móvil","alertas/cuentasPersonales/inicio.html");
+addop("t",1,"Avisos en BBVAnet","dafault.html");
+addop("t",1,"Personalice su Posición global","dafault.html");
+addop("t",1,"Configurar accesos directos","dafault.html");
+addop("t",1,"Soluciónes para invertir","sol_invertir.html");
+addop("t",1,"Personalización","personalizacion_productos.html");
+addop("t",1,"Buscador de oficinas","oficinas/mapa.html");
+
+// Cuentas
+addop("2",1,"Cuentas Personales","tra002_realiza_tran.html");
+addop("3",1,"","");
+	addop("4",1,"Consultar","cp002_relacion_ctas.html");
+		addop("5",1,"Relación de cuentas","cp002_relacion_ctas.html");				
+		addop("5",1,"Movimientos (por importe y por fecha)","cpersonales/ConsultaMovimientos_1.html");				
+		addop("5",1,"Extracto mensual","cpersonales/ConsultaMovimientos_1.html");
+		addop("5",1,"Relación de Transferencias","tra009_relacion_tran.html");
+		addop("5",1,"Ordenes Vigentes de Transferencias periódicas","tra015_relacion_tranp.html");
+		addop("5",1,"Consulta de Traspasos de cuenta a Terjeta","impuestos/cons_ord_pago_1.html");
+		addop("5",1,"Consulta de Recibos no domiciliados","pagos_consultas_cuenta.html");				
+	addop("4",1,"Operar","tra002_realiza_tran.html");	
+		addop("5",1,"Ordenar transferencia","tra002_realiza_tran.html");
+		addop("5",1,"Reutilizar transferencia","default.html");
+		addop("5",1,"Ordenar transfrencia periódica","tra011_realiza_tranp.html");
+		addop("5",1,"Mantener transferencia periódica","tra017_mantenimientop.html");	
+		addop("5",1,"Alta de cuenta ordenante","cp_alta_cuenta_ordenante.html");				
+		addop("5",1,"Baja de cuenta ordenante","cp_baja_cuenta_ordentante.html");				
+		addop("5",1,"Modificar cuenta recibos","cpersonales/gestionRecibos/modificarCuenta/modificar.html");	
+		addop("5",1,"Solicitar duplicado de recibo","cpersonales/gestionRecibos/solicitarDuplicado/solicitar.html");	
+		addop("5",1,"Ordenar no pagar recibos","cpersonales/gestionRecibos/ordenarNoPagar/ordenarNoPagar.html");
+		addop("5",1,"Cancelar orden no pagar recibos","cpersonales/gestionRecibos/cancelarNoPagar/cancelar.html");	
+		addop("5",1,"Traspaso de cuenta a tarjeta","default.html");
+		addop("5",1,"Solicitar Talonario","cp004_relacion_ctas_peticiones.html");
+		addop("5",1,"Solicitar moneda extranjera","cpersonales/monedaExtranjera/moneda.html");
+		addop("5",1,"Recarga de móviles","default.html");
+		addop("5",1,"Reutilizar recarga","default.html");
+	addop("4",1,"Información y contratación","contrataciones/CuentaBBVAClic-e/Cerrada/concbbvaclice01.html");
+		addop("5",1,"Cuentas Clic-e","contrataciones/CuentaBBVAClic-e/Cerrada/concbbvaclice01.html");
+addop("t",1,"Alta cuenta agenda","agenda_cuentas_alta.html");
+addop("t",1,"Baja cuenta agenda","agenda_cuentas_baja.html");
+addop("t",1,"Modificar cuenta agenda","agenda_cuentas_mod.html");
+addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+addop("t",1,"Avisos en BBVA net","default.html");
+addop("t",1,"Personalizar cuentas","personalizacion_intro.html");
+addop("t",1,"Avisos en el móvil","alertas/cuentasPersonales/inicio.html");
+addop("t",1,"Avisos SMS a beneficiario","default.html");
+addop("t",1,"Asesor de divisas y billetes","cva013_cotizacion_billetes_divisas.html");
+addop("t",1,"Personalización","personalizacion_productos.html");
+addop("t",1,"Buscador de oficinas","oficinas/mapa.html");
+// Tarjetas
+addop("2",1,"Tarjetas","tc002_relacion_tarjs.html");      
+addop("3",1,"Crédito","tc002_relacion_tarjs.html");
+	addop("4",1,"Consultar","tc002_relacion_tarjs.html");
+		addop("5",1,"Relación de Tarjetas","tc002_relacion_tarjs.html");
+		addop("5",1,"Situación Actual","tc004_situacion_actual.html");
+		addop("5",1,"Extracto de Tarjetas","tc003_extracto_tarj_ultimo_mes.html");
+	addop("4",1,"Operar","tarjetasCredito/modificarConds_1.html");
+		addop("5",1,"Modificar Condiciones","tarjetasCredito/modificarConds_1.html");
+		addop("5",1,"Pago Personalizado","tc010_pago_personalizado.html");
+		addop("5",1,"Simular compra","tc011_simular_liquidacion.html");
+		addop("5",1,"Solicitar Duplicado","default.html");
+		addop("5",1,"Modificar Domicilio","tarjetasCredito/modificarConds_1.html");
+		addop("5",1,"Modificar Correo Electrónico","default.html");
+		addop("5",1,"Modificar Límite Cajero","mod_limites_01.html");			
+		addop("5",1,"Activar Tarjeta","tc016_activacion.html");
+		addop("5",1,"Bloquear Tarjeta","tc002_bloquear_tarjeta.html");
+	addop("4",1,"Información y contratación","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Crédito","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Débito","default.html");
+		addop("5",1,"Tarjeta Diez","tarjetas_credito_10/credito10_1.html");
+		addop("5",1,"Tarjeta Fácil BBVA ","contrataciones/TarjetaPAN/Cerrada/contr_tj_num_per_01.html");
+		addop("5",1,"Tarjetas Virtuales","contvbbvaclice02.html");
+		addop("5",1,"Tarjetas Recarga","con_blue_anonima01.html");
+		addop("5",1,"Tarjeta Restaurante","tarjetas/tarjetaRestaurante/situacion.html");
+addop("3",1,"Débito","");
+	addop("4",1,"Consultar","default.html");
+		addop("5",1,"Relación de Tarjetas","default.html");
+		addop("5",1,"Situación Actual","default.html");
+		addop("5",1,"Extractos Mensuales","default.html");
+		addop("5",1,"Consultar movimientos","default.html");
+	addop("4",1,"Operar","default.html");
+		addop("5",1,"Modificar Domicilio","default.html");
+		addop("5",1,"Activar Tarjeta","default.html");
+		addop("5",1,"Solicitar Duplicado","default.html");			
+		addop("5",1,"Modificar Límite Cajero","default.html");							
+		addop("5",1,"Modificar Correo Electrónico","default.html");	
+		addop("5",1,"Bloquear Tarjeta","tc002_bloquear_tarjeta.html");		
+	addop("4",1,"Información y contratación","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Crédito","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Débito","default.html");
+		addop("5",1,"Tarjeta Diez","tarjetas_credito_10/credito10_1.html");
+		addop("5",1,"Tarjetas Recarga","carga_tarjeta_BlueJoven.html");
+		addop("5",1,"Tarjeta Restaurante","tarjetas/tarjetaRestaurante/situacion.html");
+		addop("5",1,"Tarjetas Virtuales","situacion_actual_tarj_ident.html");
+		addop("5",1,"Tarjeta Fácil BBVA ","tarjetas/tarjetaFacil/situacion.html");
+addop("3",1,"Diez","tarjetas_credito_10/credito10_1.html");
+	addop("4",1,"Consultar","tarjetas_credito_10/credito10_1.html");
+		addop("5",1,"Relación de Tarjetas","tarjetas_credito_10/credito10_1.html");
+		addop("5",1,"Situación Actual","tarjetas_credito_10/credito10_3_credito.html");
+		addop("5",1,"Extractos Mensuales Débito","tarjetas_credito_10/credito10_5_debito.html");
+		addop("5",1,"Extractos Mensuales Crédito","tarjetas_credito_10/credito10_5_credito.html");
+	addop("4",1,"Operar","td005_mod_condiciones.html");
+		addop("5",1,"Modificar Condiciónes","td005_mod_condiciones.html");
+		addop("5",1,"Modificar Domicilio","default.html");		
+		addop("5",1,"Activar Tarjeta","default.html");	
+		addop("5",1,"Modificar Límite Cajero","default.html");			
+		addop("5",1,"Modificar Correo Electrónico","default.html");			
+		addop("5",1,"Bloquear Tarjeta","tc002_bloquear_tarjeta.html");	
+		addop("5",1,"Solicitar Duplicado","default.html");			
+	addop("4",1,"Información y contratación","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Crédito","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Débito","default.html");
+		addop("5",1,"Tarjeta Diez","tarjetas_credito_10/credito10_1.html");
+		addop("5",1,"Tarjetas Recarga","carga_tarjeta_BlueJoven.html");
+		addop("5",1,"Tarjeta Restaurante","tarjetas/tarjetaRestaurante/situacion.html");
+		addop("5",1,"Tarjetas Virtuales","situacion_actual_tarj_ident.html");
+		addop("5",1,"Tarjeta Fácil BBVA ","tarjetas/tarjetaFacil/situacion.html");
+addop("3",1,"Recarga","situacion_actual_tarj_BlueJoven.html");
+	addop("4",1,"Consultar","situacion_actual_tarj_BlueJoven.html");
+		addop("5",1,"Relación de Tarjetas","situacion_actual_tarj_BlueJoven.html");
+		addop("5",1,"Extractos Mensuales","consulta_ordenes_tarj_BlueJoven.html");
+		addop("5",1,"Órdenes de Carga/Descarga","carga_periodica_tarjeta_BlueJoven.html");
+		addop("5",1,"Relación Cargas Periódicas","relacion_recargas_periodicas.html");
+		addop("5",1,"Situación y movimientos","default.html");
+	addop("4",1,"Operar","carga_tarjeta_BlueJoven.html");
+		addop("5",1,"Cargar Tarjeta","carga_tarjeta_BlueJoven.html");
+		addop("5",1,"Descargar Tarjeta","descarga_tarjeta_BlueJoven.html");
+		addop("5",1,"Activar Tarjeta","default.html");
+		addop("5",1,"Bloquear Tarjeta","tc002_bloquear_tarjeta.html");
+		addop("5",1,"Modificar Correo Electrónico","default.html");
+		addop("5",1,"Ordenar Carga Periódica","carga_periodica_tarjeta_BlueJoven.html");
+		addop("5",1,"Manto. Cargas Periódicas","mantenimiento_cargas_periodicas.html");
+	addop("4",1,"Información y contratación","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Crédito","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Débito","default.html");
+		addop("5",1,"Tarjeta Diez","tarjetas_credito_10/credito10_1.html");
+		addop("5",1,"Tarjetas Recarga","carga_tarjeta_BlueJoven.html");
+		addop("5",1,"Tarjeta Restaurante","tarjetas/tarjetaRestaurante/situacion.html");
+		addop("5",1,"Tarjetas Virtuales","situacion_actual_tarj_ident.html");
+		addop("5",1,"Tarjeta Fácil BBVA ","tarjetas/tarjetaFacil/situacion.html");
+addop("3",1,"Restaurante","default.html");
+	addop("4",1,"Consultar","default.html");
+		addop("5",1,"Relación de Tarjetas","default.html");
+		addop("5",1,"Situación y Movimientos","tarjetas/tarjetaRestaurante/situacion.html");
+		addop("5",1,"Extractos mensuales","tarjetas/tarjetaRestaurante/seleccion.html");
+	addop("4",1,"Operar","tc002_bloquear_tarjeta.html");
+		addop("5",1,"Bloquear tarjeta","tc002_bloquear_tarjeta.html");
+	addop("4",1,"Información y contratación","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Crédito","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Débito","default.html");
+		addop("5",1,"Tarjeta Diez","tarjetas_credito_10/credito10_1.html");
+		addop("5",1,"Tarjetas Recarga","carga_tarjeta_BlueJoven.html");
+		addop("5",1,"Tarjeta Restaurante","tarjetas/tarjetaRestaurante/situacion.html");
+		addop("5",1,"Tarjetas Virtuales","situacion_actual_tarj_ident.html");
+		addop("5",1,"Tarjeta Fácil BBVA","tarjetas/tarjetaFacil/situacion.html");
+addop("3",1,"Virtuales","situacion_actual_tarj_ident.html");
+	addop("4",1,"Consultar","situacion_actual_tarj_ident.html");
+		addop("5",1,"Situación y Movimientos","situacion_actual_tarj_ident.html");
+		addop("5",1,"Extractos Mensuales","consulta_ordenes_tarj_ident.html");
+		addop("5",1,"Órdenes de Carga/Descarga","orden_descarga_tarj_ident.html");
+		addop("5",1,"Relación de Cargas Periódicas","default.html");
+		addop("5",1,"Visualizar Tarjeta virtual","default.html");
+	addop("4",1,"Operar","carga_tarjeta.html");
+		addop("5",1,"Carga de Tarjeta","carga_tarjeta.html");
+		addop("5",1,"Descarga de Tarjeta","orden_descarga_tarj_ident.html");
+		addop("5",1,"Activar Tarjeta","default.html");
+		addop("5",1,"Bloquear Tarjeta","tc002_bloquear_tarjeta.html");
+		addop("5",1,"Modificar Correo Electrónico","modificacion_email_tarj_ident.html");
+		addop("5",1,"Ordenar Carga Periódica","");
+		addop("5",1,"Mantenimiento de cargas periódicas","");
+	addop("4",1,"Información y contratación","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Crédito","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Débito","default.html");
+		addop("5",1,"Tarjeta Diez","tarjetas_credito_10/credito10_1.html");
+		addop("5",1,"Tarjetas Recarga","carga_tarjeta_BlueJoven.html");
+		addop("5",1,"Tarjeta Restaurante","tarjetas/tarjetaRestaurante/situacion.html");
+		addop("5",1,"Tarjetas Virtuales","situacion_actual_tarj_ident.html");
+		addop("5",1,"Tarjeta Fácil BBVA ","tarjetas/tarjetaFacil/situacion.html");			
+addop("3",1,"Fácil BBVA","tarjetas/tarjetaFacil/situacion.html");
+	addop("4",1,"Consultar","tarjetas/tarjetaFacil/situacion.html");
+		addop("5",1,"Situación y Movimientos","tarjetas/tarjetaFacil/situacion.html");
+		addop("5",1,"Extractos mensuales","default.html");
+		addop("5",1,"Órdenes de Carga/Descarga","tarjetas/tarjetaFacil/consultaOrdenes.html");
+		addop("5",1,"Relación de Cargas Periódicas","default.html");					 
+		addop("5",1,"Visualizar Tarjeta Virtual","imagen_tarjeta_01.html");					 		
+	addop("4",1,"Operar","default.html");
+		addop("5",1,"Cargar Tarjeta","default.html");
+		addop("5",1,"Descargar Tarjeta","default.html");
+		addop("5",1,"Activar Tarjeta","default.html");
+		addop("5",1,"Bloquear Tarjeta","tc002_bloquear_tarjeta.html");
+		addop("5",1,"Modificar Correo Electrónico","default.html");
+		addop("5",1,"Ordenar Carga Periódica","default.html");
+		addop("5",1,"Manteniento Cargas Periódicas","default.html");
+	addop("4",1,"Información y contratación","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Crédito","tc002_relacion_tarjs.html");
+		addop("5",1,"Tarjetas de Débito","default.html");
+		addop("5",1,"Tarjeta Diez","tarjetas_credito_10/credito10_1.html");
+		addop("5",1,"Tarjetas Recarga","carga_tarjeta_BlueJoven.html");
+		addop("5",1,"Tarjeta Restaurante","tarjetas/tarjetaRestaurante/situacion.html");
+		addop("5",1,"Tarjetas Virtuales","situacion_actual_tarj_ident.html");
+		addop("5",1,"Tarjeta Fácil BBVA ","tarjetas/tarjetaFacil/situacion.html");		
+addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+addop("t",1,"Personalización","personalizacion_productos.html");
+addop("t",1,"Buscador de oficinas","oficinas/mapa.html");
+
+// Valores
+addop("2",1,"Valores","OMBCarteraVx.html");
+addop("3",1,"Cartera de valores","OMBCarteraVx.html");
+	addop("4",1,"Consultar","OMBCarteraVx.html");
+		addop("5",1,"Cartera de Valores","OMBCarteraVx.html");
+		addop("5",1,"Cartera de Valores","OMBCarteraVx.html");
+		addop("5",1,"Situación y Operaciones","default.html");
+	addop("4",1,"Operar","default.html");
+		addop("5",1,"Compra-Venta","default.html");
+	addop("4",1,"Información y contratación","concvalores01.html");
+		addop("5",1,"Contratar Cuenta de Valores","concvalores01.html");
+	addop("4",1,"Asesor","asesor01.html");
+		addop("5",1,"Información sobre Bolsa","asesor01.html");		
+		addop("5",1,"Análisis de  Bolsa","asesor02.html");		
+		addop("5",1,"Billetes y Divisas","cva013_cotizacion_billetes_divisas.html");		
+		addop("5",1,"Soluciónes para invertir","sol_invertir.html");		
+		addop("5",1,"Warrants","gestion_warrants.html");		
+		addop("5",1,"Asesor Multimedia","asesor_videos.html");		
+addop("3",1,"Mercados","");
+	addop("4",1,"España","OMBEspanax.html");
+		addop("5",1,"Mercado Continuo","OMBEspanax.html");
+		addop("5",1,"Latibex","default.html");
+		addop("5",1,"Corros Valencia","OMBValencia.html");
+		addop("5",1,"Corros Madrid","OMBMadrid.html");
+		addop("5",1,"Corros Barcelona","OMBBarcelona.html");
+		addop("5",1,"Corros Bilbao","OMBBilbao.html");
+		addop("5",1,"Derechos","OMBDerechos.html");
+		addop("5",1,"Ampliaciones de Capital","gestion_ampliacion_capital.html");
+		addop("5",1,"OPV's","opv_susc001.html");
+	addop("4",1,"Europa","OMBEuropa.html");
+		addop("5",1,"Amsterdam","cva024_compra_mi.html");
+		addop("5",1,"Bruselas","cva024_compra_mi.html");
+		addop("5",1,"Copenhague","cva024_compra_mi.html");
+		addop("5",1,"Dublín","cva024_compra_mi.html");
+		addop("5",1,"Dax Xetra","cva024_compra_mi.html");
+		addop("5",1,"Estocolmo","cva024_compra_mi.html");
+		addop("5",1,"Neuer Market","cva024_compra_mi.html");
+		addop("5",1,"Helsinki","cva024_compra_mi.html");
+		addop("5",1,"Lisboa","cva024_compra_mi.html");
+		addop("5",1,"Londres","cva024_compra_mi.html");
+		addop("5",1,"Milán","cva024_compra_mi.html");
+		addop("5",1,"París","cva024_compra_mi.html");
+		addop("5",1,"Viena","cva024_compra_mi.html");
+	addop("4",1,"América","cva024_compra_mi.html");
+		addop("5",1,"Nasdaq","cva024_compra_mi.html");
+		addop("5",1,"Dow Jones","cva024_compra_mi.html");
+		addop("5",1,"Toronto","cva024_compra_mi.html");
+		addop("5",1,"BBVA en Nueva York","cva024_compra_mi.html");
+	addop("4",1,"Resto del Mundo","cva024_compra_mi.html");
+		addop("5",1,"Australia","cva024_compra_mi.html");
+addop("3",1,"Warrants","warrants01.html");
+	addop("4",1,"Consultar","warrants01.html");
+		addop("5",1,"Cotización Actual","warrants01.html");
+		addop("5",1,"Histórico de Cotizaciónes","default.html");
+	addop("4",1,"Operar","warrants01.html");
+		addop("5",1,"Compraventa","warrants01.html");
+		addop("5",1,"Gestión de Órdenes","gestion_warrants.html");
+	addop("4",1,"Información y contratación","asesor.html");
+		addop("5",1,"Calculadora de Warrants","default.html");
+		addop("5",1,"Revista Mensual","revista_warrants.html");
+		addop("5",1,"Revista Semanal","revista_warrants.html");
+	addop("4",1,"Asesor","default.html");
+		addop("5",1,"Warrants","default.html");
+		addop("5",1,"Asesor multimedia","asesor_videos.html");
+addop("3",1,"Gestión de órdenes","cva034_operaciones_valores.html");
+	addop("4",1,"Consultas","cva034_operaciones_valores.html");
+		addop("5",1,"Valores","cva034_operaciones_valores.html");
+		addop("5",1,"Warrants","gestion_warrants.html");
+		addop("5",1,"Ampliaciónes de Capital","gestion_ampliacion_capital.html");
+		addop("5",1,"Derechos","cva034_operaciones_valores.html");
+		addop("5",1,"OPV's","opv_mant001.html");
+	addop("4",1,"Información y Contratación","OMBCarteraVx.html");
+		addop("5",1,"Contratar Cartera de Valores","OMBCarteraVx.html");
+	addop("4",1,"Asesor","asesor.html");
+		addop("5",1,"Información sobre Bolsa","asesor.html");
+		addop("5",1,"Análisis de Bolsa","asesor02.html");
+		addop("5",1,"Billetes y Divisas","cva013_cotizacion_billetes_divisas.html");
+		addop("5",1,"Soluciónes para Invertir","sol_invertir.html");
+		addop("5",1,"Warrants","default.html");
+		addop("5",1,"Asesor Multimedia","asesor_videos.html");
+addop("t",1,"Calculadora de warrants","default.html");
+addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+addop("t",1,"Personalización","personalizacion_productos.html");
+addop("t",1,"Buscador de oficinas","oficinas/mapa.html");
+
+// Fondos de inversion
+addop("2",1,"Fondos de Inversión","fi004_consulta_cesta_fondos.html");
+addop("3",1,"","");
+	addop("4",1,"Consultar","fi004_consulta_cesta_fondos.html");
+		addop("5",1,"Relación de fondos","fi004_consulta_cesta_fondos.html");
+		addop("5",1,"Consulta de movimientos","fi008_datos_fecha_fondo.html");
+		addop("5",1,"Valor liquidativo","fi001_consulta_cotizacion_fondos.html");
+	addop("4",1,"Operar","fi035_operaciones_fondos.html");
+		addop("5",1,"Tramitación de órdenes","fi035_operaciones_fondos.html");
+		addop("5",1,"Reembolso total","fi020b_cesta_fondos.html");
+		addop("5",1,"Reembolso parcial","fi020a_cesta_fondos.html");
+		addop("5",1,"Suscripción inicial","fi010a_consulta_catalogo_fondos.html");
+	addop("4",1,"Información y contratación","fi010a_consulta_catalogo_fondos.html");
+		addop("5",1,"Suscripción inicial","fi010a_consulta_catalogo_fondos.html");
+		addop("5",1,"Suscripción adiciónal","fi020_cesta_fondos.html");
+		addop("5",1,"Catálogo de fondos","default.html");
+addop("t",1,"Análisis fondos de inversion","default.html");
+addop("t",1,"Top 10","fondos/asesor/top10.html");
+addop("t",1,"Solución para tus inversiones","default.html");
+addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+addop("t",1,"Personalización","personalizacion_productos.html");
+addop("t",1,"Buscador de oficinas","oficinas/mapa.html");
+
+
+//Planes de pensiones
+addop("2",1,"Planes de pensiones","cpl008_consulta_catalogo_planes.html");	
+addop("3",1,"","");
+	addop("4",1,"Consultar","cpl008_consulta_catalogo_planes.html");
+		addop("5",1,"Relación de planes","cpl008_consulta_catalogo_planes.html");
+		addop("5",1,"Consulta de movimientos","default.html");
+		addop("5",1,"Consulta de traspasos","default.html");
+		addop("5",1,"Valor liquidativo","paginas_planes/valorLiquidativo2.html");
+		addop("5",1,"Aportaciónes periódicas","default.html");
+		addop("5",1,"Relación de órdenes","default.html");
+	addop("4",1,"Operar","paginas_planes/gestoras.html");
+		addop("5",1,"Aportación inicial","paginas_planes/gestoras.html");
+		addop("5",1,"Aportación extraordinaria","cpl_inicio_aportacion_extraordina.html");
+		addop("5",1,"Aportación periódica","default.html");
+		addop("5",1,"Gestión plan de ahorro","plan_ahorro_op.html");
+		addop("5",1,"Alta plan de ahorro","cpl_inicio_aportacion_alta_plan.html");
+		addop("5",1,"Traspaso entre planes","traspaso_planes.html");
+		addop("5",1,"Tramitación de órdenes","cpl024_operaciones_planes.html");
+	addop("4",1,"Información y contratación","cpl008_consulta_catalogo_planes.html");
+		addop("5",1,"Consulta de catálogo","cpl008_consulta_catalogo_planes.html");
+addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+addop("t",1,"Personalización","personalizacion_productos.html");
+addop("t",1,"Buscador de oficinas","oficinas/mapa.html");
+
+//Préstamos personales
+addop("2",1,"Préstamos","pre002_relacion_pres.html");
+addop("3",1,"","");
+	addop("4",1,"Consultar","pre002_relacion_pres.html");
+		addop("5",1,"Relación de préstamos","pre002_relacion_pres.html");
+		addop("5",1,"Plan de amortización","default.html");
+		addop("5",1,"Detalle actual","default.html");
+	addop("4",1,"Información y contratación","default.html");
+		addop("5",1,"Préstamo clic-e","default.html");
+		addop("5",1,"Hipoteca clic-e","default.html");
+addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+addop("t",1,"Personalización","personalizacion_productos.html");
+addop("t",1,"Buscador de oficinas","oficinas/mapa.html");
+
+//Imposiciónes/Depósitos
+addop("2",1,"Imposiciones","ipf002_relacion_ipf.html");
+addop("3",1,"","");
+	addop("4",1,"Consultar","ipf002_relacion_ipf.html");
+		addop("5",1,"Relación de imposiciónes","ipf002_relacion_ipf.html");
+		addop("5",1,"Detalle de imposiciones","default.html");
+	addop("4",1,"Información y contratación","default.html");
+		addop("5",1,"Depósitos clic-e","default.html");
+addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+addop("t",1,"Personalización","personalizacion_productos.html");
+addop("t",1,"Buscador de oficinas","oficinas/mapa.html");
+
+//Plan de ahorro personal
+//addop("2",1,"Plan de ahorro","pag002_relacion_pag.html");
+//addop("3",1,"","");
+//	addop("4",1,"Consultar","pag002_relacion_pag.html");
+//		addop("5",1,"Relación de planes","pag002_relacion_pag.html");
+//addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+//Seguros
+addop("2",1,"Seguros","svclice.html");
+addop("3",1,"","");
+	addop("4",1,"Consultar","svclice.html");
+		addop("5",1,"Relación de Seguros","svclice.html");
+	addop("4",1,"Información y contratación","svclicecontrat01.html");
+		addop("5",1,"Seguro de vida clic-e","default.html");
+addop("t",1,"Eurocalculadora","http://www.bbva.es/bbva/webinversor/calculadora/eurocalc1.htm");
+addop("t",1,"Personalización","personalizacion_productos.html");
+addop("t",1,"Buscador de oficinas","oficinas/mapa.html");
+
+
+
+
+
+
+
+//Otros productos------------------------------------------------
+addop("1",1,"Otros Servicios","");
+
+addop("2",1,"Otros productos","");
+
+addop("3",1,"@sesor","asesor.html");
+	addop("4",1,"Consultar","asesor.html");
+		addop("5",1,"Información sobre bolsa","asesor01.html");
+		addop("5",1,"Análisis sobre Bolsa","asesor02.html");
+		addop("5",1,"Análisis Fondos de Inversión","asesor03.html");
+		addop("5",1,"Billetes y Divisas","cva013_cotizacion_billetes_divisas.html");
+		addop("5",1,"Soluciones para invertir","sol_invertir.html");
+		addop("5",1,"@sesor Multimedia","asesor_videos.html");
+
+addop("3",1,"Correspondencia virtual","correspondenciaVirtual/correspondenciaVirtual_17.html");
+	addop("4",1,"Consultar","correspondenciaVirtual/correspondenciaVirtual_17.html");
+		addop("5",1," Correspondencia sin leer","correspondenciaVirtual/correspondenciaVirtual_17.html");
+		addop("5",1,"Archivo histórico","correspondenciaVirtual/correspondenciaVirtual_7.html");
+	addop("4",1,"Operar","");
+		addop("5",1,"Modificar Avisos","correspondenciaVirtual/notificacionModificacion.html");
+		addop("5",1,"Cancelar Avisos","correspondenciaVirtual/correspondenciaVirtual_13.html");
+		addop("5",1,"Gestionar Envío Postal","correspondenciaVirtual/cvirtual_gestionar_envio_postal_1.html");
+		addop("5",1,"Solicitar elim. Envío Postal","correspondenciaVirtual/correspondenciaVirtual_19.html");
+		addop("5",1,"Modificar Envío Postal","correspondenciaVirtual/correspondenciaVirtual_21.html");
+		addop("5",1,"Reanudar Envío Postal","correspondenciaVirtual/correspondenciaVirtual_23.html");
+		addop("5",1,"Gestionar Corresp. Virtual","correspondenciaVirtual/correspondenciaVirtual_29.html");
+		addop("5",1,"Cancelar Corresp. Virtual","correspondenciaVirtual/correspondenciaVirtual_15.html");
+		addop("5",1,"Extracto Mensual","correspondenciaVirtual/cv_solicitud_extracto_mes.html");
+		
+	addop("4",1,"Contratar","");
+		addop("5",1,"Avisos Correspondencia","correspondenciaVirtual/correspondenciaVirtual_11_bis.html");
+
+addop("3",1,"Impuestos y tributos","impuestos/ayudaGeneral.html");
+	addop("4",1,"Consultar","impuestos/ayudaGeneral.html");
+		addop("5",1,"Ayuda IRPF","impuestos/ayudaGeneral.html");
+		addop("5",1,"Datos renta y patrimonio","impuestos/informacion_fiscal.html");
+		addop("5",1,"Consultar tramitación IRPF","impuestos/consulta_declaracion_0.html");
+		addop("5",1,"Consulta Órdenes Pago","impuestos/cons_ord_pago_1.html");
+	addop("4",1,"Operar","impuestos/consulta_declaracion_0.html");
+		addop("5",1,"Confirmar borrador IRPF","impuestos/consulta_declaracion_0.html");
+		addop("5",1,"Enviar fichero PADRE","impuestos/envio_declaracion_1.html");
+		addop("5",1,"Pagar impuestos Municipales","impuestos/impuestos_1.html");
+
+addop("3",1,"Datos personales","dafault.html");
+	addop("4",1,"Consultar","");
+		addop("5",1,"","");
+
+addop("3",1,"Comercio Electrónico","dafault.html");
+	addop("4",1,"Operar","dafault.html");
+		addop("5",1,"Reactivación NIP 5","dafault.html");
+	addop("4",1,"Informar y contratar","intro_Mobipay_CES.html");
+		addop("5",1,"Mobipay","intro_Mobipay_CES.html");
+		addop("5",1,"Método CIP","comerce_CIP01.html");
+addop("3",1,"Recarga de móviles","recargaMoviles/recargaConsulta.html");
+	addop("4",1,"Consultar","recargaMoviles/recargaConsulta.html");
+		addop("5",1,"Recargas","recargaMoviles/recargaConsulta.html");
+	addop("4",1,"Operar","recargaMoviles/recargaDatos.html");
+		addop("5",1,"Recargar móvil","recargaMoviles/recargaDatos.html");
+		addop("5",1,"Reutilizar recarga","recargaMoviles/recargaReutilizar.html");
+addop("3",1,"Colabor@","colabora_1.html");
+	addop("4",1,"Operar","colabora_1.html");
+		addop("5",1,"colaborar","colabora_1.html");
+	addop("4",1,"Información y contratar","default.html");
+		addop("5",1,"Información de programas","default.html");
+
+addop("3",1,"Mis noticias","");
+	addop("4",1,"Operar","");
+		addop("5",1,"Boletín","");
+		addop("5",1,"Personalización","");
+
+
+addop("3",1,"Alertas","");
+	addop("4",1,"Operar","");
+		addop("5",1,"Alta","");
+		addop("5",1,"Alta con claúsula","");
+	addop("4",1,"Consulta","default.html");
+		addop("5",1,"Alta con claúsula","");
+
+		
+}
+
+

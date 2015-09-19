@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+	<bean id="cuentasClientesDelegate" class="com.onnix.business.delegate.impl.CuentasClientesDelegateImpl">
+		<property name="cuentasClientesManager" ref="cuentasClientesManager"/>
+<!-- 		<property name="auditoriaDelegate" ref="auditoriaDelegate"/> -->
+	</bean>
+
+	<bean id="pendientesPagoDelegate" class="com.onnix.business.delegate.impl.PendientesPagoDelegateImpl">
+		<property name="pendientesPagoManager" ref="pendientesPagoManager"/>
+<!-- 		<property name="auditoriaDelegate" ref="auditoriaDelegate"/> -->
+	</bean>
+
+	<bean id="balanceDelegate" class="com.onnix.business.delegate.impl.BalanceDelegateImpl">
+		<property name="balanceManager" ref="balanceManager"/>
+<!-- 		<property name="auditoriaDelegate" ref="auditoriaDelegate"/> -->
+	</bean>
+
+	<bean id="comprasDelegate" class="com.onnix.business.delegate.impl.ComprasDelegateImpl">
+		<property name="comprasManager" ref="comprasManager"/>
+	</bean>
+
+	<bean id="entregasDelegate" class="com.onnix.business.delegate.impl.EntregasDelegateImpl">
+		<property name="entregasManager" ref="entregasManager"/>
+	</bean>
+
+</beans>

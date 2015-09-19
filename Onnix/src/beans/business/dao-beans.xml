@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+ 	<bean id="cuentasClientesDAO" class="com.onnix.business.dao.impl.CuentasClientesDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+ 	<bean id="pendientesPagoDAO" class="com.onnix.business.dao.impl.PendientesPagoDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+ 	<bean id="balanceDAO" class="com.onnix.business.dao.impl.BalanceDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+ 	<bean id="comprasDAO" class="com.onnix.business.dao.impl.ComprasDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+ 	<bean id="entregasDAO" class="com.onnix.business.dao.impl.EntregasDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+</beans>

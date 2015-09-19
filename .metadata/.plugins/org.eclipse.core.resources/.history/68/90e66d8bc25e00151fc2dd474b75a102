@@ -1,0 +1,181 @@
+jQuery(document).ready(function(){
+	jQuery("#fechaEntrega").datepicker();
+
+});
+
+function cargarFormularioEntrega(accion){
+	
+	if (accion=="addEntrega")
+		jQuery("#fechaEntrega").datepicker('setDate', 'today');
+
+	var create = jQuery("#form_crearEntrega").dialog({
+		height : 250,
+		width : 290,
+		title : "Entrega",
+		buttons : {
+			"Guardar" : function() {
+				var mensaje = comprobarEntrega();
+				if (mensaje=="")
+					guardarEntrega();
+				else{
+					showError(mensaje);
+				}
+			},
+			"Cancelar" : function() {
+				limpiarCamposEntrega();
+//					validatorLimitaciones.resetForm();
+				jQuery(this).dialog("close");
+			}
+		},
+		close:function (){
+//				validatorLimitaciones.resetForm();
+			limpiarCamposEntrega();
+		}
+	});
+		
+//	create.parent().appendTo(jQuery("form:first"));
+//	jQuery("#form_crearLimitacion", window.parent.document).scrollTop(0);
+}
+
+function comprobarEntrega(){
+	var fecha = jQuery("#fechaEntrega").val();
+	var cantidad = jQuery("#cantidad").val();
+	if (cantidad!=null && cantidad!=""){
+		cantidad = cantidad.toString().replace(/\,/g,'.');
+		jQuery("#cantidad").val(cantidad);
+	}
+	if (fecha!=null && fecha!="" && cantidad!=null && cantidad!=""){
+		if (!isNaN(cantidad))
+			return "";
+		else
+			return "Los datos introducidos no son correctos";
+	} else
+		return "Debe rellenar todos los campos";
+	
+}
+
+
+function limpiarCamposEntrega(){
+	var allFields = jQuery("#form_crearEntrega input");
+	allFields.val("");
+}
+
+function modificarEntrega(id){
+	jQuery.ajax({
+		url: "loadEntregaById.htm",
+		dataType: "json",
+		data:{
+			idEntrega: id
+		},
+		success: function(bean){
+			limpiarCamposEntrega();
+			jQuery("#codigoEntrega").val(bean.id);
+			jQuery("#fechaEntrega").val(bean.fecha);
+			jQuery("#cantidad").val(bean.cantidad);
+			cargarFormularioEntrega("updateEntrega");
+		}
+	});
+	
+}
+
+function guardarEntrega(){
+	jQuery.ajax({
+		url: "addModifyEntrega.htm",
+		dataType: "json",
+		data:{
+			id: jQuery("#codigoEntrega").val(),
+			idCuenta: jQuery("#idCuenta").val(),
+			fecha: jQuery("#fechaEntrega").val(),
+			cantidad: jQuery("#cantidad").val()
+		},
+		success: function(bean){
+			jQuery("#form_crearEntrega").dialog("close");
+			obtenerListaEntregas();
+		}
+	});
+	
+}
+
+function borrarEntrega(idEntrega){
+	jQuery.ajax({
+		url: "deleteEntrega.htm",
+		dataType: "json",
+		data:{
+			idEntrega: idEntrega
+		},
+		success: function(bean){
+			obtenerListaEntregas();
+		}
+	});
+	
+}
+
+function changeFechaEntregaCellClass(data, type, full){
+	return "<span style='display:none'>"+data.substring(6) + "/" + data.substring(3,5) + "/" + data.substring(0,2) + "</span>" + data;
+}
+
+function obtenerListaEntregas(){
+	
+	
+    objectDataTable.url = "findEntregas.htm";        	
+    objectDataTable.columns = [
+//                               {"sWidth" : '4%' ,"mDataProp" : "id"	,"sClass": 'alignCenter'},
+                               {"sWidth" : '5%' ,"mDataProp" : "fecha"		,"sClass": 'alignCenter', "mRender": changeFechaEntregaCellClass},
+                               {"sWidth" : '5%' ,"mDataProp" : "cantidad"	,"sClass": 'alignCenter'},
+                               {"sWidth" : '1%',"mDataProp" : "icono"}
+                               ]; 
+                                  
+    objectDataTable.fnServerData = 
+    	function(sSource, aoData, fnCallback) {
+	        jQuery.ajax({	        	
+	            dataType : "json",
+	            url : sSource,
+	            data : {
+	                idCuenta: jQuery("#idCuenta").val()
+	            },
+	            success : function(beans) {
+	                fnCallback(beans);
+	            }
+	        });
+		};	
+	objectDataTable.fnDrawCallback = 
+		function(oSettings, json) {
+	    	
+		};									
+    
+	objectDataTable.fnCreatedRow = 
+		function(nRow, aoData,iDataIndex) {
+	        jQuery('td:eq(2)', nRow).append(jQuery("<div>").addClass( "icon-delete" ));
+	        jQuery('td:eq(2)', nRow).bind({
+	        	click:	
+	        		function(){
+		        		showModal("¿Está seguro que quiere eliminar la entrega " + aoData.id + "?", borrarEntrega, aoData.id);
+	        		}
+	        	});
+	        jQuery('td:lt(2)', nRow).click(function(event) {
+	        	modificarEntrega(aoData.id);
+	    	});
+	        var claseActual = '';
+	        jQuery(nRow).bind({
+	            mouseenter:
+	                function() {
+	                    claseActual = jQuery(this).attr('class');
+	                    jQuery(this).removeClass();
+	                    jQuery(this).addClass("resaltar");
+	                },
+	            mouseleave:
+	                function() {
+	                    jQuery(this).removeClass();
+	                    jQuery(this).addClass(claseActual);
+	                },
+	        });        
+	        
+		};
+	objectDataTable.bFilter=false;
+	objectDataTable.sScrollY='160px';
+	objectDataTable.bPaginate=false;
+	var oTable = jQuery('#tablaEntregas').myDataTable(objectDataTable);
+
+	
+}
+

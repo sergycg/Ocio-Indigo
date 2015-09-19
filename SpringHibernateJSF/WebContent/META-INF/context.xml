@@ -1,0 +1,6 @@
+<Context>
+
+<!-- Opción 2: Un Datasource para varias aplicaciones. Requiere la creacion del Resource en el servidor (server.xml) -->
+<!--  <ResourceLink global="jdbc/pruebaDB" name="jdbc/mipruebaDB" type="javax.sql.DataSource"/> -->
+ 
+</Context>

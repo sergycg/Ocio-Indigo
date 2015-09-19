@@ -1,0 +1,92 @@
+<beans xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"	   			 
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+						http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+						http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+
+	<bean id="pruebaManager"  parent="transactionTemplateSgdr">
+		<property name="target">
+			<bean class="com.prueba.manager.PruebaManagerImlp">
+				<property name="pruebaDAO" ref="pruebaDAO" />
+			</bean>
+		</property>
+	</bean>
+
+
+ 
+	<bean id="pruebaDAO" class="com.prueba.dao.PruebaDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+  
+ <!-- Opcion 1: NO requiere el fichero META-INF/context.xml, NI la creacion del Resource en el servidor (server.xml) -->
+<!--    
+  <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+	<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+	<property name="url" value="jdbc:mysql://localhost:3306/pruebaJava" />
+	<property name="username" value="root" />
+	<property name="password" value="admin" />
+  </bean>
+ -->  	
+ 
+ <!-- Opcion 2: 
+ a) Requiere el fichero META-INF/context.xml(descomentando la linea "ResourceLink") ó sin este fichero pero añadiendo la linea
+  <ResourceLink global="jdbc/pruebaDB" name="jdbc/mipruebaDB" type="javax.sql.DataSource"/> al fichero context.xml del servidor.
+ b) Requiere la creacion del Resource en el servidor (server.xml) -->
+ 
+  	<bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+	  <property name="jndiName" value="java:comp/env/jdbc/mipruebaDB"/>
+	</bean>
+
+
+
+<!-- Hibernate session factory -->
+<bean id="sessionFactory" 
+     class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+ 
+    <property name="dataSource">
+      <ref bean="dataSource"/>
+    </property>
+ 
+    <property name="hibernateProperties">
+       <props>
+         <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+         <prop key="hibernate.show_sql">true</prop>
+ 		 <!-- <prop key="hibernate.current_session_context_class">thread</prop> --> 
+       </props>
+    </property>
+ 
+    <property name="mappingResources">
+	<list>
+		<value>com/prueba/vo/PruebaDTO.hbm.xml</value>
+	</list>
+     </property>	
+ 
+</bean>
+
+
+ 	<!-- Configuracion de las transacciones -->
+	
+	<bean id="transactionManagerSgdrLocal" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="transactionTemplateSgdr" abstract="true"
+        class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+        <property name="transactionManager" ref="transactionManagerSgdrLocal"/>
+        <property name="transactionAttributes">
+            <props>               			
+	            <prop key="find*">PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED</prop> <!-- Crea una nueva transaccion si no existe ninguna y evita lecturas sucias -->
+	            <prop key="load*">PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED</prop>
+	            <prop key="save*">PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED,-com.prueba.excepciones.MyException</prop>
+	            <prop key="modify*">PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED</prop>
+	            <prop key="delete*">PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED</prop>
+	            <prop key="get*">PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED</prop>
+	            <prop key="*">PROPAGATION_REQUIRED,ISOLATION_READ_COMMITTED</prop>
+            </props>
+        </property>
+    </bean>
+  
+</beans>

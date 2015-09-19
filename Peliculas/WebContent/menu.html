@@ -1,0 +1,349 @@
+<HTML>
+	<HEAD>
+		<TITLE>Menu Dinero Express</TITLE>
+		<link rel="stylesheet" href="mult/menu.css" type="text/css">
+		<SCRIPT language="Javascript" src="mult/dynlayer.js"></SCRIPT>
+		<SCRIPT language="JavaScript" src="mult/miniscroll.js"></SCRIPT>
+		<SCRIPT language="JavaScript">
+			<!--
+				if(is.ns){
+					origWidth=innerWidth;
+					origHeight=innerHeight;
+					onresize=function(){
+						if(innerWidth!=origWidth||innerHeight!=origHeight){
+							location.reload()
+						}
+					}
+				}else if (is.ie){
+					onresize=function(){
+						location.reload()
+				    }
+				}
+
+				function generateTree(){
+					aux0 = gFld('')
+					aux1 = insFld (aux0, gFld('Alta Película','PeliculasServlet?accion=nueva'))
+					aux2 = insFld (aux0, gFld('Alta CD','CDServlet?accion=nuevoCD'))
+					aux3 = insFld (aux0, gFld('Alta DVD','PeliculasServlet?accion=nueva'))
+					aux4 = insFld (aux0, gFld('Consultar Películas',''))
+						aux4_1 = insFld (aux4, gFld('Listar Todas','PeliculasServlet?accion=listarPeliculasTodas'))
+						aux4_2 = insFld (aux4, gFld('Buscar','buscarPeliculas001.jsp'))
+					aux5 = insFld (aux0, gFld('Consulta CDs','CDServlet?accion=listarCDsTodos'))
+					aux6 = insFld (aux0, gFld('Consulta DVDs',''))
+/*						aux3_1 = insFld (aux3, gFld('Envio de Remesas','rem_envio_0.html'))
+						aux3_2 = insFld (aux3, gFld('Cancelaci&oacute;n de Remesas','rem_cancel_0.html'))
+						aux3_3 = insFld (aux3, gFld('Consulta de Remesas','rem_consulta_oficina_0.html'))
+							aux3_3_1 = insDoc (aux3_3, gLnk('Consulta por Oficina','rem_consulta_oficina_0.html'))
+							aux3_3_2 = insDoc (aux3_3, gLnk('Consulta por Emisor','rem_consulta_emisor_0.html'))
+							aux3_3_3 = insDoc (aux3_3, gLnk('Consulta por Identificador','rem_consulta_identificador_0.html'))
+  						aux3_4 = insFld (aux3, gFld('Gesti&oacute;n de Contrato','gestion_contratos_0.html'))
+						aux3_5 = insFld (aux3, gFld('Utilidades','simulacion_0_net.html'))
+							aux3_5_1 = insDoc (aux3_5, gLnk('Simulaci&oacute;n de Remesas','simulacion_0_net.html'))
+							aux3_5_2 = insDoc (aux3_5, gLnk('Puntos de Recogida','consulta_puntos_recogida_1_net.html'))
+							aux3_5_3 = insDoc (aux3_5, gLnk('Consulta de Cambio','consulta_cambio.html'))							
+							//aux3_5_4 = insDoc (aux3_5, gLnk('Cuadre de Caja','cuadre_caja_remesas.html'))
+							aux3_5_4 = insDoc (aux3_5, gLnk('Relación Corresponsales','corresponsales.pdf'))//GMB 2005-09-06
+						aux3_6 = insFld (aux3, gFld('Renovaci&oacute;n de contrato','renovacion_contrato.html'))
+						aux3_7 = insFld (aux3, gFld('Bloqueo de contratos','bloqueo_contratos.html'))
+					aux4 = insFld (aux0, gFld('Otras operaciones','rem_envio_0.html'))
+						aux4_1 = insFld (aux4, gFld('Carta de Instrucciones','formul_carta1.html'))
+						aux4_2 = insFld (aux4, gFld('Solicitud Transferencia-Cheques','formul_solictransfer1.html'))
+						aux4_3 = insFld (aux4, gFld('Mensajes a Backoffice','Formulario_Carta1.html'))
+						aux4_4 = insFld (aux4, gFld('Cambio Clave Acceso','cambioclaveacceso.html'))
+						aux4_5 = insFld (aux4, gFld('Petición de Datos Personales L.O.P.D.','peticion_datos_personales.html'))
+//						aux4_1 = insFld (aux4, gFld('Envio de Remesas','rem_envio_0.html'))
+//						aux4_2 = insFld (aux4, gFld('Petición de Datos Personales L.O.P.D.','peticion_datos_personales.html'))
+					aux5 = insFld (aux0, gFld('Consulta de Contrataciones','consulta_contrataciones.html'))
+					//aux6 = insFld (aux0, gFld('Cuadre de Caja','cuadre_caja_remesas.html'))
+					aux6 = insFld (aux0, gFld('Cuadre de Caja','cuadre_de_caja_1.html'))
+					aux7 = insFld (aux0, gFld('Administración','cuadro_mandos.html'))
+						aux7_1 = insFld (aux7, gFld('Carta de Instrucciones','cuadro_mandos.html'))
+						aux7_2 = insFld (aux7, gFld('Apertura de Cajas','apertura_cajas.html'))
+					aux8 = insFld (aux0, gFld('Otras Operaciones','otras_operaciones.html'))
+*/					
+					clickOnFolderRec(aux0, "")
+				}
+
+				function gFld(name, link){
+					var arrayAux
+
+					arrayAux = new Array
+					arrayAux[0] = 0
+					arrayAux[1] = 0
+					arrayAux[2] = 0
+					arrayAux[3] = name
+					if (!link || link=="undefined")
+					link="";
+					arrayAux[4]=link
+					
+					return arrayAux
+				}
+
+				//Append Child of type Folder
+				function insFld(parent, child){
+					parent[parent.length] = child
+					total_hijos=parent.length-PARAMETROS
+					if (parent[3]=="")
+						child[1]=total_hijos
+					else
+						child[1]=parent[1]+"_"+total_hijos
+									
+					return child
+				}
+
+				//Append Child of type Doc
+				function insDoc(parent, child){
+					parent[2] = parent[2] + 1
+					parent[parent.length] = child
+				
+					return child
+				}
+
+				function gLnk(docDescription, link){
+					var enlace = "<A href='"+link+"' CLASS='carpeta2' TARGET='web'>"+docDescription+"</A>"
+					return enlace
+				}
+
+				function gLnk2(docDescription, link){
+					var enlace = "<A href='"+link+"' CLASS='carpeta2' TARGET='Nueva'>"+docDescription+"</A>"
+					return enlace
+				}
+				function gLnkN(docDescription, link){
+					var enlace = "<SPAN CLASS='carpeta2N'>"+docDescription+"</SPAN>"
+					return enlace
+				}
+				
+				function redrawTree(){
+					redrawNode(aux0, arbol, 0,"")
+					arbol.close()
+				}
+
+				function redrawNode(foldersNode, arbol, level,leftSide){
+					var i=0
+					var numberOfFolders
+					var numberOfDocs
+					if (foldersNode[3] != ""){
+						arbol.write("<table cellspacing='0' cellpadding='0' border='0' width=190px'><tr><td>");
+						arbol.write("<table width='190px' border='0' cellspacing='0' cellpadding='1'>")
+						arbol.write("<tr><td width='1%'><img src='mult/blanco.gif' border='0' width='10' height='9'></td><td valign='middle' width='5%'>")
+						arbol.write(leftSide)
+						if (level>0) /*segundo*/
+							leftSide = leftSide + "<img src='mult/blanco.gif' width='1' height='1' border='0'>"
+							displayIconAndLabel(foldersNode, arbol)
+							arbol.write("</table>")
+					}
+
+					if (foldersNode.length > PARAMETROS && foldersNode[0]){
+						//hay  sub-nodos y la carpeta esta abierta
+						
+						numberOfFolders = foldersNode.length - PARAMETROS - foldersNode[2]
+						
+						// visualiza las carpetas
+						level = level + 1
+						for (i=PARAMETROS ; i < PARAMETROS + numberOfFolders; i++){
+							redrawNode(foldersNode[i], arbol, level, leftSide)
+						}
+
+						// display the documents ultimo nivel
+						for ( i = PARAMETROS + numberOfFolders; i < foldersNode.length ; i++ ){
+						      arbol.write("<tr><td align='right'>")
+						      arbol.write("&nbsp;&nbsp;&nbsp;&nbsp;" + foldersNode[i] + "<br>")
+						      arbol.write("</tr></table>")
+						}
+					}
+				}
+
+				function aplicaEstilo(estilo){
+					nivelEstilo=1;
+					for (var i=0; i< estilo.length; i++){
+						var ch= estilo.substring(i,i+1)
+						if (ch == "_")
+							nivelEstilo++
+					}
+					return nivelEstilo
+				}
+
+				function displayIconAndLabel(foldersNode, arbol){
+					nivelEstilo=aplicaEstilo(foldersNode[1])
+					//parent.web.document.write(foldersNode[3]+"----"+foldersNode[0]+"<BR>")
+					arbol.write("<A CLASS='carpeta" + nivelEstilo+"' ")
+					arbol.write("HREF='javascript:openBranch(\"" + foldersNode[3] + "\",\"" + foldersNode[4] + "\")' ")
+					arbol.write(" onMouseOver='window.status=\"" + foldersNode[3] + "\";return true;' onMouseOut='window.status=\"\";return true;'><IMG")
+					if (foldersNode[0]){
+						arbol.write(" SRC=" + openfolder + " BORDER=0 BORDER=noborder></A>")
+					}else{
+						arbol.write(" SRC=" + closedfolder + " BORDER=0 BORDER=noborder></A>")
+					}
+					arbol.write("</td><td width='94%'>");
+					arbol.write("<table cellspacing='0' cellpadding='1' border='0' width='100%'>");
+					arbol.write("<tr><td height='20px' class='tabla" + nivelEstilo + "'>")
+					arbol.write("<a class='carpeta" + nivelEstilo + "' ")
+					arbol.write("HREF='javascript:openBranch(\"" + foldersNode[3] + "\",\"" + foldersNode[4] + "\")' ")
+					arbol.write(" onMouseOver='window.status=\"" + foldersNode[3] + "\";return true;' onMouseOut='window.status=\"\";return true;' >")
+					arbol.write("" + foldersNode[3] + "</A></td></tr></table>");
+					arbol.write("</td></tr></table>\n")
+				}
+
+				// ********************************
+
+				function closeFolders(foldersNode){
+					var i=0
+					for (i=PARAMETROS; i< foldersNode.length - foldersNode[2]; i++){
+						closeFolders(foldersNode[i])
+					}
+
+					if (foldersNode==aux0)
+						foldersNode[0]=1
+					else
+						foldersNode[0] = 0
+				}
+
+
+				var padre=0
+				var j=0;
+				var aux = new Array
+
+				function clickOnFolderRec(foldersNode, folderName){
+					nivel=""+foldersNode[1]
+					var i=0
+
+					if (nivel.indexOf("_") == -1){
+						padre="0"
+					}else{
+						padre=nivel.substring(0,nivel.lastIndexOf("_"))
+					}
+
+					mipadre = eval("aux"+padre)
+					minivel = eval("aux"+nivel)
+
+					if (mipadre[0] == 1 && padre != 0)
+					if (minivel[3] != folderName && minivel[0] == 1)
+					minivel[0] = 0
+					//parent.web.document.write("<FONT COLOR='#0000FF'> "+minivel[3]+"**"+minivel[0]+"<BR></FONT>")
+
+					if (foldersNode[3] == folderName){
+
+						for (j = 1 ; j < aux0.length - aux0[2] - PARAMETROS + 1; j++){
+							aux[j]="aux"+j
+							if (aux[j] != "aux"+padre && /*padre.length <= 1 &&*/ folderName!= eval(aux[j])[3]){
+								closeFolders(eval(aux[j]))
+							}else if (folderName != eval(aux[j])[3]){
+							}
+							//parent.web.document.write("<FONT COLOR='#00FF00'> "+foldersNode[0]+"** "+foldersNode[3]+"<BR></FONT>")
+						}
+					
+					    if (foldersNode[0]){
+					      closeFolders(foldersNode)
+					    }else{
+					      foldersNode[0] = 1
+					    }
+					
+					  }else{
+					    for (i = PARAMETROS ; i < foldersNode.length  - foldersNode[2]; i++){
+					      clickOnFolderRec(foldersNode[i], folderName)
+						}
+					}
+				}
+				// ********************
+				// Event handlers
+
+				function openBranch(branchName,branchLink){
+				 //parent.web.document.write("<B>***********************</B><BR><BR>")
+				  clickOnFolderRec(aux0, branchName)
+				  if (branchLink!="")
+				    parent.web.location.href=branchLink
+				
+				  timeOutId = setTimeout("redrawTree()",60)
+				}
+
+
+				function initializeTree(){
+				  generateTree()
+				  redrawTree()
+				}
+
+				var timeOutId = 0
+				var PARAMETROS = 5
+				
+				//var openfolder="mult/flechadown.gif"
+				//var closedfolder="mult/flechaup.gif"
+				var openfolder="mult/flecha.gif"
+				var closedfolder="mult/blanco.gif"
+				var blank="mult/blanco.gif"
+				var raya="mult/bol.gif"/* la de las terceras PONER AQUI LA OTRA IMAGEN*/
+				
+				
+				function init() {
+					DynLayerInit();
+					if (is.ie)
+						arbol.html=""
+					myscroll = new MiniScroll(ventana,arbol)
+					initializeTree();
+				  }
+                  
+                function coloca() 
+                {
+                    document.all['ventanaDiv'].style.position='absolute';
+                    document.all['ventanaDiv'].style.left=0;
+                    document.all['ventanaDiv'].style.top=105;	  
+                    document.all['ventanaDiv'].style.visibility = 'visible'; 
+                    document.all['ventanaDiv'].style.clip="rect(0,190,200,0)";
+                    document.all['divArriba'].style.left=190;
+                    document.all['divArriba'].style.top=105;
+                    document.all['divAbajo'].style.left=190;
+                    document.all['divAbajo'].style.top=282;
+                    document.all['divArriba'].style.visibility = 'visible'; 
+                    document.all['divAbajo'].style.visibility = 'visible';
+                }// fin funcion coloca
+
+			// end hiding contents from old browsers  -->
+
+		</SCRIPT>
+	</head>
+		
+<body onLoad="coloca();init();">
+		<!--a href="En_construccion_Promocion.html" target="web" title="Ir a la p&aacute;gina principal"><img src="mult/logo-menu.gif" width="175" height="96" border="0" alt="Dinero Express"></a-->
+		<table cellpadding="0" cellspacing="0" border="0" align="center">
+			<tr>
+				 
+				<!-- <td><a href="En_construccion_Promocion.html" target="web" title="Ir a la p&aacute;gina principal"><img src="mult/cabecera1.gif" border="0"></a></td>-->
+				<td><img src="mult/oscar.gif" border="0"></td>
+				
+			</tr>
+		</table>
+		<table cellpadding="0" cellspacing="0" border="0" width="190">
+			<tr>
+				<!-- 
+				<td class="telefono">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;902 200 200</td>
+				-->
+			</tr>
+		</table>
+		<p>
+		<div id="ventanaDiv">
+			<div id="arbolDiv"></div>
+		</div>
+    	<p>
+        
+           <!-- capas de las flechas (arriba-abajo)  -->
+ 
+ <div id="divArriba" style="visibility:hidden;position:absolute;">
+  <a HREF="javascript:// Subir" onmouseover="myscroll.up(); return false;" onMouseDown="myscroll.up();return false;" onMouseUp="myscroll.stop();window.focus();" onMouseOut="myscroll.stop();"><img src="mult/scroll_sub.gif" hspace="2" vspace="0" border="0" name="imagen1" width="12" height="23"></a>
+ </div>
+ <div id="divAbajo" style="visibility:hidden;position:absolute;"> 
+  <a HREF="javascript:// Bajar" onmouseover="myscroll.down();return false;" onMouseDown="myscroll.down();return false;" onMouseUp="myscroll.stop();window.focus();" onMouseOut="myscroll.stop();"><img src="mult/scroll_baj.gif" hspace="2" vspace="0" border="0" name="imagen2" width="12" height="23"></a>
+ </div> 
+ 
+        
+        
+       <br><br><br><br><br><br><br><br><br><br><br>
+		<!--foto-->
+		
+        <table cellpadding="0" cellspacing="0" border="0" width="190px">
+			<tr>
+				<br><br><br><br><br><td align="center"><img src="mult/rollo2.gif" border="0"></td>
+			</tr>
+		</table>
+		
+	</body>
+</HTML>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!--     <class name="com.onnix.business.vo.ViewCuentasClientesVO" table="vw_cuenta_cliente" catalog="pruebaJava"> -->
+ 
+ 	<class name="com.onnix.business.vo.ViewCuentasClientesVO" table="vw_cuenta_cliente">
+ 		<composite-id>
+		 	<key-property name="idCliente" 	type="long" column="ID_CLIENTE"/>
+			<key-property name="idCuenta"	type="long" column="ID_CUENTA"/>
+		</composite-id>
+		
+		<property name="nombre" 				type="string" column="NOMBRE"/>
+		<property name="apellidos" 				type="string" column="APELLIDOS"/>
+		<property name="direccion" 				type="string" column="DIRECCION"/>
+		<property name="codPostal" 				type="string" column="COD_POSTAL"/>
+		<property name="telefono" 				type="string" column="TELEFONO"/>
+		<property name="movil" 					type="string" column="MOVIL"/>
+		<property name="otro" 					type="string" column="OTRO"/>
+		<property name="observacionesCliente" 	type="string" column="CLI_OBSERVACIONES"/>
+		<property name="fechaAlta" 				type="date" column="FECHA_ALTA"/>
+		<property name="fechaModificacion" 		type="date" column="FECHA_MODIF"/>
+		<property name="indActiva"	 			type="integer" column="IND_ACTIVA"/>
+		<property name="observacionesCuenta" 	type="string" column="CU_OBSERVACIONES"/>
+		<property name="totalEntregado" 		type="float" column="TOTAL_ENTREGADO"/>
+		<property name="totalComprado" 			type="float" column="TOTAL_COMPRAS"/>
+		<property name="resto" 					type="float" column="RESTO"/>
+		
+    </class>
+</hibernate-mapping>

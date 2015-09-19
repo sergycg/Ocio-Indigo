@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.onnix.business.vo.CompraVO" table="compra" >
+ 
+ 		<id name="idCompra"	type="long" column="idCompra">
+ 		 	<generator class="native"/>
+ 		</id>
+ 		
+		<property name="numFactura" 		type="string" 	column="numFactura"/>
+		<property name="codObjeto" 			type="string" 	column="codObjeto"/>
+		<property name="descObjeto" 		type="string" 	column="descObjeto"/>
+		<property name="fecha" 				type="date" 	column="fecha"/>
+		<property name="precio" 			type="float" 	column="precio"/>
+		<property name="idCuenta" 			type="long"		column="idCuenta"/>
+    </class>
+</hibernate-mapping>

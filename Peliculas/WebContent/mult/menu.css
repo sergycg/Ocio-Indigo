@@ -1,0 +1,11 @@
+body{font-family:Verdana,Arial,sans-serif;font-size:10pt;font-style:normal;color:#000000;background-color:#FFFFFF;margin:0;padding:0;top:0;height:0;}
+#ventanaDiv{clip:rect(0px 210px 158px 0px);position:relative;width:100%;layer-background-color:transparent;}
+#arbolDiv{position:relative;}
+.carpeta1{font-size:9px;color:#9D9D9D;font-family:Verdana,Arial,Helvetica,sans-serif;text-decoration:none;font-weight:Bold;}
+.carpeta2{font-size:9px;color:#9D9D9D;font-family:Verdana,Arial,sans-serif;text-decoration:none;font-weight:regular;}
+.carpeta2N{font-size:9px;color:#9D9D9D;font-family:Verdana,Arial,sans-serif;text-decoration:none;font-weight:regular;}
+.carpeta3{font-size:9px;font-weight:regular;color:#000000;font-family:Verdana,Arial,Helvetica,sans-serif;text-decoration:none;font-weight:bold;}
+a{font-family:Verdana;font-size:10pt;font-style:normal;color:#000000;}
+.telefono {font-size:11px;color:#9D9D9D;font-family:Verdana,Arial,sans-serif;text-decoration:none;font-weight:bold;}
+.tabla1 {background-color:#F3F3F3; border: Solid 1px #CACACA;}
+.tabla2 {background-color:#FF3F3FF; border: Solid 1px #CACACA;}

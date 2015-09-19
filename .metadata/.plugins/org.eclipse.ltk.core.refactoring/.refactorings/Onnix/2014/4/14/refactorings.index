@@ -1,0 +1,20 @@
+1396713344976	Copy compilation unit
+1396714884609	Rename type 'IAuditoriaDelegate'
+1396715263202	Rename package 'com.onniax.business.vo'
+1396715371201	Copy file
+1396720405765	Copy compilation unit
+1396720429954	Rename type 'ICuentasClientesDelegate'
+1396720446059	Copy compilation unit
+1396720464301	Rename type 'CuentasClientesDelegateImpl'
+1396720599074	Copy package
+1396720617623	Delete elements
+1396720625229	Delete element
+1396782840169	Rename type 'PruebaDAO'
+1396782911467	Delete element
+1396782941864	Move compilation unit
+1396782985380	Delete element
+1396783104696	Rename compilation unit 'PruebaDAOImpl.java'
+1396783151336	Rename type 'CuentasClientesDAO'
+1396801749498	Rename resource 'listaDerechos.jsp'
+1396803337186	Rename resource 'findDerechos.js'
+1396805731258	Move 1 resources to 'pages'

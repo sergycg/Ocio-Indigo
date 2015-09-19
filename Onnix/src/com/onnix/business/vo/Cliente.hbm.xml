@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+ 	<class name="com.onnix.business.vo.ClienteVO" table="cliente">
+ 
+ 		<id name="idCliente"	type="long" column="idCliente">
+ 			<generator class="native"/>
+ 		</id>
+		
+		<property name="nombre" 				type="string" column="nombre"/>
+		<property name="apellidos" 				type="string" column="apellidos"/>
+		<property name="direccion" 				type="string" column="direccion"/>
+		<property name="codPostal" 				type="string" column="codigoPostal"/>
+		<property name="telefono" 				type="string" column="telefono"/>
+		<property name="movil" 					type="string" column="movil"/>
+		<property name="otro" 					type="string" column="otro"/>
+		<property name="observacionesCliente" 	type="string" column="observaciones"/>
+
+        <set name="cuentas" table="cuenta" lazy="false" cascade="all-delete-orphan" inverse="true">
+            <key column="idCliente" />
+            <one-to-many class="com.onnix.business.vo.CuentaVO" />
+        </set>
+		
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="general.layout" template="/WEB-INF/pages/layouts/generalLayout.jsp">
+ 		<put-attribute name="header" value="/WEB-INF/pages/tiles/header.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/pages/tiles/menu.jsp" />
+		<put-attribute name="contenido" value="${contenido}" />
+ 		<put-attribute name="footer" value="/WEB-INF/pages/tiles/footer.jsp" />
+		
+		<put-list-attribute name="cssGlobal">
+			<add-attribute value="/css/jMenu-master/jMenu.jquery.css"/>
+			<add-attribute value="/css/initial.css" />
+			<add-attribute value="/css/header.css" />
+			<add-attribute value="/css/bootstrap.min.css" />
+			<add-attribute value="/css/jquery-ui-1.9.2.custom.css"/>
+			<add-attribute value="/css/dataTable/datatable-bootstrap.css"/>
+			
+			<!-- Menú de la aplicación-->
+			
+			<add-attribute value="/css/contenido.css" />
+			<add-attribute value="/css/global.css" />			
+			<!-- Botones check -->
+			<add-attribute value="/css/radioCheck.css" />
+			<!-- Botones Menú listado de derechos -->
+			<add-attribute value="/css/jquery.contextmenu.css" />			
+			<!-- Check -->
+			<add-attribute value="/css/icheck/flat/orange.css"/>
+			<!-- JScrollPane: De momento no se usa-->
+			<add-attribute value="/css/jscrollpane/jquery.jscrollpane.css"/>
+		</put-list-attribute>
+		
+		<put-list-attribute name="cssLocal">
+		</put-list-attribute>
+		
+		<put-list-attribute name="jsGlobal">
+			<add-attribute value="/js/jquery/jquery-1.8.3.js" />
+			<add-attribute value="/js/jquery/jquery-ui-1.9.2.custom.js" />
+			<add-attribute value="/js/jquery/jquery.conflict.js" />
+			<add-attribute value="/js/pages/derechos/derechosConstantes.js"/>
+			<add-attribute value="/js/global.js" />
+			<add-attribute value="/js/sgdr.utils.js" />
+			<add-attribute value="/js/jquery/jMenu-master/jMenu.jquery.js" />
+<!-- 			<add-attribute value="/js/sgdr.security.utils.js" /> -->					
+			<add-attribute value="/js/jquery/datepicker/jquery.ui.datepicker-es.js" />
+			<add-attribute value="/js/jquery/dataTable/jquery.dataTables.js" />
+			<add-attribute value="/js/jquery/dataTable/DT_bootstrap.js" />			
+			<!-- https://github.com/fronteed/iCheck -->
+			<add-attribute value="/js/jquery/icheck/jquery.icheck.min.js"/>
+			<add-attribute value="/js/jquery/jscrollpane/jquery.jscrollpane.min.js"/>
+			<add-attribute value="/js/jquery/dataTable/jquery.dataTables.columnFilter.js"/>
+			<!-- http://jqueryvalidation.org/ -->
+			<add-attribute value="/js/jquery/formValidator/jquery.validate.js"/>		
+			<!-- http://igorescobar.github.io/jQuery-Mask-Plugin/ -->
+			<add-attribute value="/js/jquery/mask/jquery.mask.js"/>	
+		</put-list-attribute>
+		
+		<put-list-attribute name="jsLocal">
+		</put-list-attribute>
+
+	</definition>
+
+
+	<definition name="findCuentas" extends="general.layout">
+		<put-attribute name="contenido" value="/WEB-INF/pages/findCuentasClientes.jsp" />
+		<put-list-attribute name="jsLocal">
+			<add-attribute value="/js/jquery/dataTable/jquery.dataTables.rowGrouping.js" />
+			<add-attribute value="/js/jquery/contextMenu/jquery.contextmenu.SGDR.js" />
+			<add-attribute value="/js/pages/onnix/findCuentas.js"/>
+		</put-list-attribute>
+	</definition> 
+
+	<definition name="editCuentaCliente" extends="general.layout">
+		<put-attribute name="contenido" value="/WEB-INF/pages/editCuentaCliente.jsp" />
+		<put-list-attribute name="jsLocal">
+			<add-attribute value="/js/jquery/multiOpenAccordion/jquery.multi-open-accordion-1.5.3.min.js" />
+			<add-attribute value="/js/jquery/dataTable/jquery.dataTables.rowGrouping.js" />
+			<add-attribute value="/js/jquery/contextMenu/jquery.contextmenu.SGDR.js" />
+			<add-attribute value="/js/pages/onnix/cuentaCliente.js"/>
+			<add-attribute value="/js/pages/onnix/compras.js"/>
+			<add-attribute value="/js/pages/onnix/entregas.js"/>
+		</put-list-attribute>
+	</definition> 
+
+	<definition name="findPendientesPago" extends="general.layout">
+		<put-attribute name="contenido" value="/WEB-INF/pages/findPendientesPago.jsp" />
+		<put-list-attribute name="jsLocal">
+			<add-attribute value="/js/jquery/dataTable/jquery.dataTables.rowGrouping.js" />
+			<add-attribute value="/js/jquery/contextMenu/jquery.contextmenu.SGDR.js" />
+			<add-attribute value="/js/pages/onnix/findPendientesPago.js"/>
+		</put-list-attribute>
+	</definition> 
+
+	<definition name="balance" extends="general.layout">
+		<put-attribute name="contenido" value="/WEB-INF/pages/balance.jsp" />
+		<put-list-attribute name="jsLocal">
+			<add-attribute value="/js/jquery/dataTable/jquery.dataTables.rowGrouping.js" />
+			<add-attribute value="/js/jquery/contextMenu/jquery.contextmenu.SGDR.js" />
+			<add-attribute value="/js/pages/onnix/balance.js"/>
+		</put-list-attribute>
+	</definition> 
+
+	<definition name="listaCuentas" template="/WEB-INF/pages/listaCuentas.jsp" />
+	<definition name="listaPendientesPago" template="/WEB-INF/pages/listaPendientesPago.jsp" />
+
+	<definition name="datosGeneralesCuenta" template="/WEB-INF/pages/datosGeneralesCuenta.jsp" />
+	<definition name="datosCompras" template="/WEB-INF/pages/datosCompras.jsp" />
+	<definition name="datosEntregas" template="/WEB-INF/pages/datosEntregas.jsp" />
+
+</tiles-definitions>

@@ -1,0 +1,229 @@
+
+/* Imagen de carga */
+#div_carga{
+	background-color: #FFFFFF;
+    position:fixed;
+    top: 0;
+    left: 0;
+    height:100%;
+	filter: alpha(opacity=50); /* para IE5-7 */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* para IE8 */
+	/* filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50); */  /* para IE8 */
+	opacity:0.50; /* para el resto de navegadores */
+	display:none;
+	z-index:1300;
+}
+/* Espacio sobre el que se posiciona la imagen de carga */
+#cargador{
+	position:absolute;
+    top:50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    overflow: none;
+} 
+
+/* Icono de consulta */
+.icon-detail {
+	width: 16px;
+	height: 16px;
+	float: left;	
+	background-image: url(../img/detalle.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+.icon-detailContrato {
+	width: 16px;
+	height: 16px;
+	float: left;	
+	background-image: url(../img/detalle.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+.icon-delete {
+	width: 16px;
+	height: 16px;
+	background-image: url(../img/delete.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+.icon-exclamacion {
+	width: 16px;
+	height: 16px;
+	float: left;	
+	background-image: url(../img/exclamacion.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+.icon-OK {
+	width: 16px;
+	height: 16px;
+	float: left;	
+	background-image: url(../img/OK.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+.icon-NOK {
+	width: 16px;
+	height: 16px;
+	float: left;	
+	background-image: url(../img/NOK.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+.icon-OK-center {
+	width: 16px;
+	height: 16px;
+	float: left;	
+	background-image: url(../img/OK.png);
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+.icon-NOK-center {
+	width: 16px;
+	height: 16px;
+	float: left;	
+	background-image: url(../img/NOK.png);
+	background-repeat: no-repeat;
+	background-position: center center;	
+}
+
+.icon-detail-cabecera {
+	width:16px;
+    height:16px;
+    cursor:pointer;
+    position:absolute;
+    background: transparent url(../img/detalle.png) no-repeat;
+    background-position: 0px 0px;
+}
+/* Icono de edicion */
+.icon-edit {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background-image: url(../img/ico_edit.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+.icon-tv {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background-image: url(../img/icon_tv.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+	margin-left: 5px;
+}
+
+.icon-wizard-c {
+	width: 26px;
+	height: 26px;
+	float: right;
+	background-image: url(../img/icon_wizard_C.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	
+}
+
+.icon-wizard-t {
+	width: 26px;
+	height: 26px;
+	float: right;
+	background-image: url(../img/icon_wizard_T.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+.icon-ficha-tecnica {
+	width: 16px;
+	height: 16px;
+	float: left;
+	background-image: url(../img/icon_ficha_tecnica.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+	margin-top: 11px;
+	margin-left: 38px;
+	cursor: pointer;
+}
+
+.icon-exclamation {
+	width: 32px;
+	height: 32px;
+	float: right;	
+	background-image: url(../img/icon_exclamation.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+.icon-find {
+	width: 42px;
+	height: 42px;
+	float: left;	
+	background-image: url(../img/icon_find.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+.icon-find-standalone {
+	width: 42px;
+	height: 42px;
+	float: left;	
+	background-image: url(../img/icon_find.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+.icon-search {
+	width: 16px;
+	height: 16px;
+	float: right;	
+	background-image: url(../img/icon_search.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;	
+}
+
+/** DATATABLE ROW GROUPING **/
+td.group { 
+    background-color: #F5EFD1;
+	border-bottom: 1px solid #A19B9E;
+	border-top: 2px solid #A19B9E;
+}
+
+.expanded-group {
+	background: url(../img/minus.png) no-repeat scroll 10px center
+		transparent;
+}
+
+.collapsed-group {
+	background: url(../img/plus.png) no-repeat scroll 10px center
+		transparent;
+}
+
+
+td.details {
+	background-color: #d1cfd0;
+	border: 2px solid #A19B9E;
+}
+/** FIN DATATABLE ROW GROUPING **/
+/** CONTENIDO DE LOS POP-UP **/
+.ui-widget-content {
+	border: 1px solid #dddddd;
+	background: #FFF;
+	color: #333333;
+}
+
+#content-alert{
+	z-index: 100;
+	position: fixed;
+	margin-left: 30%;
+	margin-top: 7%;
+	width: 67%;
+}
+
+#content-message-alert{
+	width: 40%;
+}

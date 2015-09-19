@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!--     <class name="com.onnix.business.vo.ViewCuentasClientesVO" table="vw_cuenta_cliente" catalog="pruebaJava"> -->
+ 
+ 	<class name="com.onnix.business.vo.CuentaVO" table="cuenta">
+
+ 		<id name="idCuenta"	type="long" column="idCuenta">
+ 			<generator class="native"/>
+ 		</id>
+		
+		<many-to-one name="cliente" class="com.onnix.business.vo.ClienteVO" fetch="select">
+            <column name="idCliente" not-null="true" />
+        </many-to-one>
+
+   		<property name="fechaAlta" 				type="date" column="fechaAlta"/>
+		<property name="fechaModificacion" 		type="date" column="fechaModificacion"/>
+		<property name="indActiva"	 			type="integer" column="activa"/>
+		<property name="observacionesCuenta" 	type="string" column="observaciones"/>
+		
+    </class>
+</hibernate-mapping>

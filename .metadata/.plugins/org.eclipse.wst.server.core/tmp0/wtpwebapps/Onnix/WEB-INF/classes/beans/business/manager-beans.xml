@@ -1,0 +1,45 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd">
+
+ 	<bean id="cuentasClientesManager"  parent="transactionTemplateSgdr">
+		<property name="target">
+			<bean class="com.onnix.business.manager.impl.CuentasClientesManagerImpl">
+ 				<property name="cuentasClientesDAO" ref="cuentasClientesDAO" />
+			</bean>
+		</property>
+	</bean>
+
+ 	<bean id="pendientesPagoManager"  parent="transactionTemplateSgdr">
+		<property name="target">
+			<bean class="com.onnix.business.manager.impl.PendientesPagoManagerImpl">
+ 				<property name="pendientesPagoDAO" ref="pendientesPagoDAO" />
+			</bean>
+		</property>
+	</bean>
+
+ 	<bean id="balanceManager"  parent="transactionTemplateSgdr">
+		<property name="target">
+			<bean class="com.onnix.business.manager.impl.BalanceManagerImpl">
+ 				<property name="balanceDAO" ref="balanceDAO" />
+			</bean>
+		</property>
+	</bean>
+
+ 	<bean id="comprasManager"  parent="transactionTemplateSgdr">
+		<property name="target">
+			<bean class="com.onnix.business.manager.impl.ComprasManagerImpl">
+ 				<property name="comprasDAO" ref="comprasDAO" />
+			</bean>
+		</property>
+	</bean>
+
+ 	<bean id="entregasManager"  parent="transactionTemplateSgdr">
+		<property name="target">
+			<bean class="com.onnix.business.manager.impl.EntregasManagerImpl">
+ 				<property name="entregasDAO" ref="entregasDAO" />
+			</bean>
+		</property>
+	</bean>
+
+</beans>

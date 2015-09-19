@@ -1,0 +1,14 @@
+<Context>
+
+<!-- Opcion 1: DataSource para MYSQL para una aplicación  -->
+  <Resource name="jdbc/miDb" auth="Container" 
+   type="javax.sql.DataSource"
+   maxActive="50" maxIdle="30" maxWait="10000"
+   username="root" password="admin" 
+   driverClassName="com.mysql.jdbc.Driver"
+   url="jdbc:mysql://localhost:3306/pruebaJava"/>
+
+<!-- Opción 2: Un Datasource para varias aplicaciones. Requiere la creacion del Resource en el servidor (server.xml) -->
+ <ResourceLink global="jdbc/pruebaDB" name="jdbc/mipruebaDB" type="javax.sql.DataSource"/>
+ 
+</Context>

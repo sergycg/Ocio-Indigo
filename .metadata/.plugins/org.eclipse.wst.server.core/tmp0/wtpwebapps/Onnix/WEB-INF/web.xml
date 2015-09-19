@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Onnix</display-name>
+	<servlet>
+		<servlet-name>springONNIX</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springONNIX</servlet-name>
+		<url-pattern>*.htm</url-pattern>
+	</servlet-mapping>
+	
+	<listener>
+	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  	</listener>
+  	
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>
+			/WEB-INF/applicationContext.xml, 
+			classpath:beans/business/resource-beans.xml,
+			classpath:beans/business/transaction-beans.xml,
+			classpath:beans/business/datasource-beans.xml,
+			classpath:beans/business/dao-beans.xml,
+			classpath:beans/web/delegate-beans.xml,
+			classpath:beans/business/manager-beans.xml
+		</param-value>
+	</context-param>
+  	
+<!--   	<listener>
+	    <listener-class>com.iecisa.rtve.sgdr.web.utils.TokenListener</listener-class>
+	</listener>
+ -->  	 
+  	<session-config>
+		<session-timeout>60</session-timeout>
+	</session-config>
+
+<!-- 	The Usual Welcome File List -->
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/core-rt</taglib-uri>
+			<taglib-location>/WEB-INF/tld/c-rt.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/fmt</taglib-uri>
+			<taglib-location>/WEB-INF/tld/fmt.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+			<taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/sql</taglib-uri>
+			<taglib-location>/WEB-INF/tld/sql.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/x</taglib-uri>
+			<taglib-location>/WEB-INF/tld/x.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://ajaxtags.org/tags/ajax</taglib-uri>
+			<taglib-location> /WEB-INF/tld/ajaxtags.tld</taglib-location>
+		</taglib>
+		<taglib>  
+	      <taglib-uri>http://www.springframework.org/tags</taglib-uri>	
+	      <taglib-location>/WEB-INF/tld/spring.tld</taglib-location>  
+	    </taglib>
+	    <taglib>
+			<taglib-uri>http://www.springframework.org/tags/form</taglib-uri>
+			<taglib-location>/WEB-INF/tld/spring-form.tld</taglib-location>
+		</taglib>
+		 <taglib>
+			<taglib-uri>http://tiles.apache.org/tags-tiles</taglib-uri>
+			<taglib-location>/WEB-INF/tld/tiles-jsp.tld</taglib-location>
+		</taglib>
+		<taglib>
+			<taglib-uri>http://sgdr.com/tags</taglib-uri>
+			<taglib-location>/WEB-INF/tld/custom.tld</taglib-location>
+		</taglib>
+		
+	</jsp-config>    
+</web-app>

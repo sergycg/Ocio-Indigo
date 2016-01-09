@@ -112,6 +112,7 @@ public class ConstantKeys {
 	public static final String MESSAGE_ERROR_ADD_COMPRA = "messages.error.cuenta.add.compra";
 	public static final String MESSAGE_ERROR_DELETE_COMPRA = "messages.error.cuenta.delete.compra";
 	public static final String MESSAGE_ERROR_CONSULTA_BALANCE = "messages.error.consulta.balance";
+	public static final String MESSAGE_ERROR_CONSULTA_TOTALES = "messages.error.cuenta.consulta.totales";
 	
 	// CODIGO HTML
 	public static final String DIV_CABECERA = "<div class='titleGrouping'><b>&nbsp;</b>";

@@ -1,0 +1,51 @@
+package com.onnix.business.vo;
+
+import java.io.Serializable;
+
+public class ViewTotalesVO implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4991902992244842312L;
+	private Long idCliente;
+	private Long idCuenta;
+	private Float totalEntregado;
+	private Float totalComprado;
+	private Float resto;
+	
+	
+	public Long getIdCliente() {
+		return idCliente;
+	}
+	public void setIdCliente(Long idCliente) {
+		this.idCliente = idCliente;
+	}
+	public Long getIdCuenta() {
+		return idCuenta;
+	}
+	public void setIdCuenta(Long idCuenta) {
+		this.idCuenta = idCuenta;
+	}
+	public Float getTotalEntregado() {
+		return totalEntregado;
+	}
+	public void setTotalEntregado(Float totalEntregado) {
+		this.totalEntregado = totalEntregado;
+	}
+	public Float getTotalComprado() {
+		return totalComprado;
+	}
+	public void setTotalComprado(Float totalComprado) {
+		this.totalComprado = totalComprado;
+	}
+	public Float getResto() {
+		return resto;
+	}
+	public void setResto(Float resto) {
+		this.resto = resto;
+	}
+	
+	
+
+}

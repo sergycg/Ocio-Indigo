@@ -122,7 +122,7 @@ public final class datosCompras_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\t\t\t    </thead>\r\n");
       out.write("\t\t\t    <tbody></tbody>\r\n");
       out.write("\t\t\t</table>\r\n");
-      out.write("\t\t\t<div style=\"margin-top: -20px;\">Total:</div>\r\n");
+      out.write("\t\t\t<div style=\"margin-top: -20px;\">Total: <span id=\"total_tabla_compras\"><b></b></span></div>\r\n");
       out.write("\t\t</div>\r\n");
       out.write("\r\n");
       out.write("\t\t<div class=\"elementos_seccion\" style=\"width:30%;float:right; \" id=\"divListadoEntregas\" style=\"display : block;\">\r\n");
@@ -149,7 +149,7 @@ public final class datosCompras_jsp extends org.apache.jasper.runtime.HttpJspBas
       out.write("\t\t\t    </thead>\r\n");
       out.write("\t\t\t    <tbody></tbody>\r\n");
       out.write("\t\t\t</table>\r\n");
-      out.write("\t\t\t<div style=\"margin-top: -20px;\">Total:</div>\r\n");
+      out.write("\t\t\t<div style=\"margin-top: -20px;\">Total:<span id=\"total_tabla_entregas\"><b></b></span></div>\r\n");
       out.write("\t\t\t\r\n");
       out.write("\t\t</div>\r\n");
       out.write("\t\r\n");

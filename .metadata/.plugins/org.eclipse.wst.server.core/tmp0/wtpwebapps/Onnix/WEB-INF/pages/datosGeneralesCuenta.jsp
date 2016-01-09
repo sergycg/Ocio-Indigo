@@ -55,15 +55,15 @@
 		<div class="cajaResumen">
 			<div class="campo_100 top0">
 				<label><b><spring:message code="label.cuenta.comprado" /></b></label>
-				<span><b>100</b></span>
+				<span id="total_comprado"><b></b></span>
 			</div>
 			<div class="campo_100 top0">
 				<label><b><spring:message code="label.cuenta.entregado" /></b></label>
-				<span><b>100</b></span>
+				<span id="total_entregado"><b></b></span>
 			</div>
 			<div class="campo_40 margenDerecho0 top0">
 				<label><b><spring:message code="label.cuenta.resto" /></b></label>
-				<span><b>100</b></span>
+				<span id="total_resto"><b></b></span>
 			</div>
 		</div>
 		<div class="fin_float"></div>

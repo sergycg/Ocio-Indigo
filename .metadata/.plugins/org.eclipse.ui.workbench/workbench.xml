@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="86" version="2.0">
+<workbench progressCount="68" version="2.0">
 <workbenchAdvisor/>
 <window height="728" maximized="true" width="1024" x="75" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -8,7 +8,7 @@
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="160" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
@@ -21,13 +21,14 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wb.core.guiEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.css.core.csssource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.server.ui.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jst.jsf.facesconfig.ui.FacesConfigEditor" itemType="typePlaceholder" x="289" y="22"/>
@@ -52,54 +53,49 @@
 <part id="7"/>
 <part id="8"/>
 <part id="9"/>
-<part id="10"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="contenido.css" partName="contenido.css" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/css/contenido.css" title="contenido.css" tooltip="Onnix/WebContent/css/contenido.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/css/contenido.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10844" selectionTopPixel="9090"/>
-</editor>
 <editor id="org.eclipse.jst.jsp.core.jspsource.source" name="editCuentaCliente.jsp" partName="editCuentaCliente.jsp" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/WEB-INF/pages/editCuentaCliente.jsp" title="editCuentaCliente.jsp" tooltip="Onnix/WebContent/WEB-INF/pages/editCuentaCliente.jsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/WEB-INF/pages/editCuentaCliente.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1582" selectionTopPixel="98"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1447" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jst.jsp.core.jspsource.source" name="datosGeneralesCuenta.jsp" partName="datosGeneralesCuenta.jsp" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/WEB-INF/pages/datosGeneralesCuenta.jsp" title="datosGeneralesCuenta.jsp" tooltip="Onnix/WebContent/WEB-INF/pages/datosGeneralesCuenta.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/WEB-INF/pages/datosGeneralesCuenta.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3393" selectionTopPixel="660"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CuentaClienteController.java" partName="CuentaClienteController.java" path="D:/MisProyectos/Ocio Indigo/Onnix/src/com/onnix/web/controller/CuentaClienteController.java" title="CuentaClienteController.java" tooltip="Onnix/src/com/onnix/web/controller/CuentaClienteController.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/src/com/onnix/web/controller/CuentaClienteController.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5288" selectionTopPixel="1680"/>
+</editor>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="cuentaCliente.js" partName="cuentaCliente.js" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/js/pages/onnix/cuentaCliente.js" title="cuentaCliente.js" tooltip="Onnix/WebContent/js/pages/onnix/cuentaCliente.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/js/pages/onnix/cuentaCliente.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="353" selectionOffset="573" selectionTopPixel="30"/>
 </editor>
 <editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="entregas.js" partName="entregas.js" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/js/pages/onnix/entregas.js" title="entregas.js" tooltip="Onnix/WebContent/js/pages/onnix/entregas.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/js/pages/onnix/entregas.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3734" selectionTopPixel="2007"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1883" selectionTopPixel="855"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="datosCompras.jsp" partName="datosCompras.jsp" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/WEB-INF/pages/datosCompras.jsp" title="datosCompras.jsp" tooltip="Onnix/WebContent/WEB-INF/pages/datosCompras.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/WEB-INF/pages/datosCompras.jsp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="19" selectionOffset="1801" selectionTopPixel="420"/>
 </editor>
 <editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="compras.js" partName="compras.js" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/js/pages/onnix/compras.js" title="compras.js" tooltip="Onnix/WebContent/js/pages/onnix/compras.js" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/js/pages/onnix/compras.js"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4049" selectionTopPixel="1840"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="5438" selectionTopPixel="2505"/>
 </editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="datosEntregas.jsp" partName="datosEntregas.jsp" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/WEB-INF/pages/datosEntregas.jsp" title="datosEntregas.jsp" tooltip="Onnix/WebContent/WEB-INF/pages/datosEntregas.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/WEB-INF/pages/datosEntregas.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="275" selectionOffset="429" selectionTopPixel="0"/>
+<editor id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="totales.js" partName="totales.js" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/js/pages/onnix/totales.js" title="totales.js" tooltip="Onnix/WebContent/js/pages/onnix/totales.js" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/js/pages/onnix/totales.js"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="754" selectionTopPixel="30"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CuentaClienteController.java" partName="CuentaClienteController.java" path="D:/MisProyectos/Ocio Indigo/Onnix/src/com/onnix/web/controller/CuentaClienteController.java" title="CuentaClienteController.java" tooltip="Onnix/src/com/onnix/web/controller/CuentaClienteController.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/src/com/onnix/web/controller/CuentaClienteController.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1371" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CuentasClientesDelegateImpl.java" partName="CuentasClientesDelegateImpl.java" path="D:/MisProyectos/Ocio Indigo/Onnix/src/com/onnix/business/delegate/impl/CuentasClientesDelegateImpl.java" title="CuentasClientesDelegateImpl.java" tooltip="Onnix/src/com/onnix/business/delegate/impl/CuentasClientesDelegateImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/src/com/onnix/business/delegate/impl/CuentasClientesDelegateImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="832" selectionTopPixel="270"/>
 </editor>
-<editor id="org.eclipse.wst.css.core.csssource.source" name="bootstrap.min.css" partName="bootstrap.min.css" path="D:/MisProyectos/Ocio Indigo/Onnix/WebContent/css/bootstrap.min.css" title="bootstrap.min.css" tooltip="Onnix/WebContent/css/bootstrap.min.css" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/WebContent/css/bootstrap.min.css"/>
-<editorState selectionHorizontalPixel="0" selectionLength="11" selectionOffset="23006" selectionTopPixel="3795"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CuentasClientesManagerImpl.java" partName="CuentasClientesManagerImpl.java" path="D:/MisProyectos/Ocio Indigo/Onnix/src/com/onnix/business/manager/impl/CuentasClientesManagerImpl.java" title="CuentasClientesManagerImpl.java" tooltip="Onnix/src/com/onnix/business/manager/impl/CuentasClientesManagerImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/src/com/onnix/business/manager/impl/CuentasClientesManagerImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="794" selectionTopPixel="255"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.PropertiesFileEditor" name="MessageResources.properties" partName="MessageResources.properties" path="D:/MisProyectos/Ocio Indigo/Onnix/src/resources/MessageResources.properties" title="MessageResources.properties" tooltip="Onnix/src/resources/MessageResources.properties" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/src/resources/MessageResources.properties"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1877" selectionTopPixel="645"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComprasController.java" partName="ComprasController.java" path="D:/MisProyectos/Ocio Indigo/Onnix/src/com/onnix/web/controller/ComprasController.java" title="ComprasController.java" tooltip="Onnix/src/com/onnix/web/controller/ComprasController.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/src/com/onnix/web/controller/ComprasController.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1391" selectionTopPixel="124"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CompraBean.java" partName="CompraBean.java" path="D:/MisProyectos/Ocio Indigo/Onnix/src/com/onnix/web/beans/CompraBean.java" title="CompraBean.java" tooltip="Onnix/src/com/onnix/web/beans/CompraBean.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/src/com/onnix/web/beans/CompraBean.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="431" selectionTopPixel="18"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CuentasClientesDAOImpl.java" partName="CuentasClientesDAOImpl.java" path="D:/MisProyectos/Ocio Indigo/Onnix/src/com/onnix/business/dao/impl/CuentasClientesDAOImpl.java" title="CuentasClientesDAOImpl.java" tooltip="Onnix/src/com/onnix/business/dao/impl/CuentasClientesDAOImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Onnix/src/com/onnix/business/dao/impl/CuentasClientesDAOImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1389" selectionTopPixel="420"/>
 </editor>
 </editors>
 <views>
@@ -137,7 +133,7 @@
 <viewState/>
 </view>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
-<viewState CommonNavigator.LINKING_ENABLED="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
+<viewState CommonNavigator.LINKING_ENABLED="1" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0"/>
 </view>
 <view id="org.eclipse.ui.views.AllMarkersView" partName="Markers">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.allSeverityField" categoryGroup="org.eclipse.ui.ide.type" markerContentGenerator="org.eclipse.ui.ide.allMarkersGenerator" partName="Markers">
@@ -173,7 +169,7 @@
 <viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
@@ -196,6 +192,7 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.eclipse.wst.ws.explorer.explorer"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
 <show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <show_view_action id="org.eclipse.wst.server.ui.ServersView"/>
 <show_view_action id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
@@ -324,6 +321,7 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.wb.core.ui.actionset"/>
 <alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
 <show_view_action id="org.eclipse.debug.ui.DebugView"/>
 <show_view_action id="org.eclipse.debug.ui.VariableView"/>
@@ -351,22 +349,31 @@
 <view id="org.eclipse.wst.server.ui.ServersView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74959874" ratioLeft="467" ratioRight="156" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.74959874" ratioLeft="467" ratioRight="156" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
@@ -374,23 +381,30 @@
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
 <page content="org.eclipse.wst.xsl.jaxp.debug.ui.view1" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.4496788" ratioLeft="210" ratioRight="257" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -480,170 +494,168 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/Onnix/WebContent/WEB-INF/pages/datosGeneralesCuenta.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/Onnix/WebContent/css/contenido.css"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/Onnix/WebContent/js/pages/onnix/compras.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/Onnix/WebContent/js/pages/onnix/cuentaCliente.js"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/Onnix/WebContent/js/pages/onnix/entregas.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" path="/Onnix/src/resources/MessageResources.properties"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" path="/Onnix/src/resources/MessageResources.properties"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" path="/Onnix/WebContent/css/contenido.css"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Onnix/src/com/onnix/web/controller/CuentaClienteController.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Onnix/src/com/onnix/web/controller/ComprasController.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Onnix/src/com/onnix/web/beans/CompraBean.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/Onnix/WebContent/WEB-INF/pages/datosCompras.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Onnix/src/com/onnix/web/beans/ViewTotalesBean.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/Onnix/WebContent/js/pages/onnix/compras.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/Onnix/WebContent/js/pages/onnix/entregas.js"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/Onnix/WebContent/WEB-INF/pages/datosGeneralesCuenta.jsp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" path="/Onnix/WebContent/js/pages/onnix/totales.js"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Onnix/WebContent/WEB-INF/tiles.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Onnix/src/com/onnix/business/delegate/impl/CuentasClientesDelegateImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Onnix/src/com/onnix/business/manager/impl/CuentasClientesManagerImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Onnix/src/com/onnix/business/dao/impl/CuentasClientesDAOImpl.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Onnix/src/beans/business/datasource-beans.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Onnix/src/com/onnix/web/controller/CuentaClienteController.java"/>
 </editors>
-<item historyLabel="contenido.css" index="1">
-<position info="not_deleted" x="10679" y="14"/>
-</item>
-<item historyLabel="compras.js" index="2">
-<position info="not_deleted" x="5118" y="0"/>
-</item>
-<item historyLabel="entregas.js" index="3">
-<position info="not_deleted" x="4672" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="2572" y="0"/>
-</item>
-<item historyLabel="MessageResources.properties" index="4">
-<position info="not_deleted" x="152" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3121" y="0"/>
-</item>
-<item historyLabel="MessageResources.properties" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="2753" y="19"/>
-</item>
-<item historyLabel="MessageResources.properties" index="4">
-<position info="not_deleted" x="1821" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="2753" y="19"/>
-</item>
-<item historyLabel="MessageResources.properties" index="5">
-<position info="not_deleted" x="1877" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3292" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
+<item historyLabel="entregas.js" index="1">
 <position/>
 </item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3014" y="0"/>
+<item historyLabel="ViewTotalesBean.java" index="3">
+<position info="not_deleted" x="177" y="14"/>
 </item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="3592" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3049" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="3567" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3393" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="3567" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3393" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="7031" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3393" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="7031" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3230" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="6580" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3372" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="6580" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3230" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="3592" y="0"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3230" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="11156" y="14"/>
-</item>
-<item historyLabel="datosGeneralesCuenta.jsp" index="0">
-<position info="not_deleted" x="3393" y="0"/>
-</item>
-<item historyLabel="contenido.css" index="6">
-<position info="not_deleted" x="11156" y="14"/>
-</item>
-<item historyLabel="CuentaClienteController.java" index="7">
-<position info="not_deleted" x="1371" y="0"/>
-</item>
-<item historyLabel="ComprasController.java" index="8">
-<position info="not_deleted" x="1391" y="0"/>
-</item>
-<item historyLabel="CompraBean.java" index="9">
-<position info="not_deleted" x="431" y="8"/>
-</item>
-<item historyLabel="datosCompras.jsp" index="10">
+<item historyLabel="entregas.js" index="1">
 <position/>
 </item>
-<item historyLabel="CompraBean.java" index="9">
-<position info="not_deleted" x="431" y="8"/>
+<item historyLabel="cuentaCliente.js" index="0">
+<position info="not_deleted" x="573" y="353"/>
 </item>
-<item historyLabel="compras.js" index="11">
+<item historyLabel="entregas.js" index="1">
 <position/>
 </item>
-<item historyLabel="entregas.js" index="12">
-<position info="not_deleted" x="2528" y="0"/>
+<item historyLabel="ViewTotalesBean.java" index="3">
+<position info="not_deleted" x="209" y="13"/>
 </item>
-<item historyLabel="compras.js" index="11">
-<position info="not_deleted" x="3408" y="37"/>
+<item historyLabel="entregas.js" index="1">
+<position/>
 </item>
-<item historyLabel="entregas.js" index="12">
-<position info="not_deleted" x="3059" y="0"/>
+<item historyLabel="ViewTotalesBean.java" index="3">
+<position info="not_deleted" x="240" y="5"/>
 </item>
-<item historyLabel="compras.js" index="11">
-<position info="not_deleted" x="3977" y="81"/>
+<item historyLabel="entregas.js" index="1">
+<position info="not_deleted" x="2315" y="0"/>
 </item>
-<item historyLabel="entregas.js" index="12">
-<position info="not_deleted" x="3734" y="0"/>
+<item historyLabel="cuentaCliente.js" index="0">
+<position info="not_deleted" x="573" y="353"/>
 </item>
-<item historyLabel="compras.js" index="11">
-<position info="not_deleted" x="4049" y="0"/>
+<item historyLabel="entregas.js" index="1">
+<position info="not_deleted" x="2315" y="0"/>
 </item>
-<item historyLabel="datosCompras.jsp" index="10">
+<item historyLabel="compras.js" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="CompraBean.java" index="9">
-<position info="not_deleted" x="431" y="8"/>
+<item historyLabel="compras.js" index="4">
+<position info="not_deleted" x="525" y="0"/>
 </item>
-<item historyLabel="datosCompras.jsp" index="10">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="compras.js" index="4">
+<position/>
 </item>
-<item historyLabel="CompraBean.java" index="9">
-<position info="not_deleted" x="431" y="8"/>
+<item historyLabel="entregas.js" index="1">
+<position info="not_deleted" x="2315" y="0"/>
 </item>
-<item active="true" historyLabel="datosGeneralesCuenta.jsp" index="13">
-<position info="not_deleted" x="3393" y="0"/>
+<item historyLabel="totales.js" index="5">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="compras.js" index="4">
+<position info="not_deleted" x="2593" y="0"/>
+</item>
+<item historyLabel="entregas.js" index="1">
+<position info="not_deleted" x="2331" y="0"/>
+</item>
+<item historyLabel="tiles.xml" index="6">
+<position info="not_deleted" x="3989" y="0"/>
+</item>
+<item historyLabel="entregas.js" index="1">
+<position info="not_deleted" x="2552" y="0"/>
+</item>
+<item historyLabel="compras.js" index="4">
+<position info="not_deleted" x="2136" y="0"/>
+</item>
+<item historyLabel="entregas.js" index="1">
+<position info="not_deleted" x="1883" y="0"/>
+</item>
+<item historyLabel="compras.js" index="4">
+<position info="not_deleted" x="5438" y="6"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5301" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5288" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5328" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5376" y="0"/>
+</item>
+<item historyLabel="totales.js" index="5">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5376" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5413" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5448" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5526" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5481" y="0"/>
+</item>
+<item historyLabel="totales.js" index="5">
+<position info="not_deleted" x="754" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5506" y="8"/>
+</item>
+<item historyLabel="CuentasClientesDelegateImpl.java" index="7">
+<position info="not_deleted" x="832" y="8"/>
+</item>
+<item historyLabel="CuentasClientesManagerImpl.java" index="8">
+<position info="not_deleted" x="794" y="8"/>
+</item>
+<item historyLabel="CuentasClientesDAOImpl.java" index="9">
+<position info="not_deleted" x="1355" y="8"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="2">
+<position info="not_deleted" x="5288" y="0"/>
+</item>
+<item historyLabel="CuentasClientesDAOImpl.java" index="9">
+<position info="not_deleted" x="1389" y="0"/>
+</item>
+<item historyLabel="CuentasClientesDAOImpl.java" index="9">
+<position info="not_deleted" x="1493" y="0"/>
+</item>
+<item historyLabel="CuentasClientesDAOImpl.java" index="9">
+<position info="not_deleted" x="1559" y="0"/>
+</item>
+<item historyLabel="CuentasClientesDAOImpl.java" index="9">
+<position info="not_deleted" x="1627" y="0"/>
+</item>
+<item historyLabel="CuentasClientesDAOImpl.java" index="9">
+<position info="not_deleted" x="1677" y="0"/>
+</item>
+<item historyLabel="CuentasClientesDAOImpl.java" index="9">
+<position info="not_deleted" x="1491" y="0"/>
+</item>
+<item historyLabel="datasource-beans.xml" index="10">
+<position info="not_deleted" x="2196" y="0"/>
+</item>
+<item historyLabel="CuentasClientesDAOImpl.java" index="9">
+<position info="not_deleted" x="1491" y="0"/>
+</item>
+<item historyLabel="CuentaClienteController.java" index="11">
+<position info="not_deleted" x="5288" y="0"/>
+</item>
+<item historyLabel="CuentasClientesDAOImpl.java" index="9">
+<position info="not_deleted" x="1389" y="0"/>
+</item>
+<item active="true" historyLabel="CuentaClienteController.java" index="11">
+<position info="not_deleted" x="5288" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -663,44 +675,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="datosCompras.jsp" tooltip="Onnix/WebContent/WEB-INF/pages/datosCompras.jsp">
-<persistable path="/Onnix/WebContent/WEB-INF/pages/datosCompras.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="datasource-beans.xml" tooltip="Onnix/src/beans/business/datasource-beans.xml">
+<persistable path="/Onnix/src/beans/business/datasource-beans.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CompraBean.java" tooltip="Onnix/src/com/onnix/web/beans/CompraBean.java">
-<persistable path="/Onnix/src/com/onnix/web/beans/CompraBean.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CuentasClientesDAOImpl.java" tooltip="Onnix/src/com/onnix/business/dao/impl/CuentasClientesDAOImpl.java">
+<persistable path="/Onnix/src/com/onnix/business/dao/impl/CuentasClientesDAOImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComprasController.java" tooltip="Onnix/src/com/onnix/web/controller/ComprasController.java">
-<persistable path="/Onnix/src/com/onnix/web/controller/ComprasController.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CuentasClientesManagerImpl.java" tooltip="Onnix/src/com/onnix/business/manager/impl/CuentasClientesManagerImpl.java">
+<persistable path="/Onnix/src/com/onnix/business/manager/impl/CuentasClientesManagerImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.PropertiesFileEditor" name="MessageResources.properties" tooltip="Onnix/src/resources/MessageResources.properties">
-<persistable path="/Onnix/src/resources/MessageResources.properties"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CuentasClientesDelegateImpl.java" tooltip="Onnix/src/com/onnix/business/delegate/impl/CuentasClientesDelegateImpl.java">
+<persistable path="/Onnix/src/com/onnix/business/delegate/impl/CuentasClientesDelegateImpl.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.css.core.csssource.source" name="bootstrap.min.css" tooltip="Onnix/WebContent/css/bootstrap.min.css">
-<persistable path="/Onnix/WebContent/css/bootstrap.min.css"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="tiles.xml" tooltip="Onnix/WebContent/WEB-INF/tiles.xml">
+<persistable path="/Onnix/WebContent/WEB-INF/tiles.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ViewCuentasClientesVO.java" tooltip="Onnix/src/com/onnix/business/vo/ViewCuentasClientesVO.java">
-<persistable path="/Onnix/src/com/onnix/business/vo/ViewCuentasClientesVO.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CuentaClienteController.java" tooltip="Onnix/src/com/onnix/web/controller/CuentaClienteController.java">
-<persistable path="/Onnix/src/com/onnix/web/controller/CuentaClienteController.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="datosEntregas.jsp" tooltip="Onnix/WebContent/WEB-INF/pages/datosEntregas.jsp">
-<persistable path="/Onnix/WebContent/WEB-INF/pages/datosEntregas.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="DT_bootstrap.js" tooltip="Onnix/WebContent/js/jquery/dataTable/DT_bootstrap.js">
-<persistable path="/Onnix/WebContent/js/jquery/dataTable/DT_bootstrap.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="totales.js" tooltip="Onnix/WebContent/js/pages/onnix/totales.js">
+<persistable path="/Onnix/WebContent/js/pages/onnix/totales.js"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="compras.js" tooltip="Onnix/WebContent/js/pages/onnix/compras.js">
 <persistable path="/Onnix/WebContent/js/pages/onnix/compras.js"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="entregas.js" tooltip="Onnix/WebContent/js/pages/onnix/entregas.js">
-<persistable path="/Onnix/WebContent/js/pages/onnix/entregas.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ViewTotalesBean.java" tooltip="Onnix/src/com/onnix/web/beans/ViewTotalesBean.java">
+<persistable path="/Onnix/src/com/onnix/web/beans/ViewTotalesBean.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.jsdt.ui.CompilationUnitEditor" name="jquery.dataTables.js" tooltip="Onnix/WebContent/js/jquery/dataTable/jquery.dataTables.js">
-<persistable path="/Onnix/WebContent/js/jquery/dataTable/jquery.dataTables.js"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ConstantKeys.java" tooltip="Onnix/src/com/onnix/business/constants/ConstantKeys.java">
+<persistable path="/Onnix/src/com/onnix/business/constants/ConstantKeys.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="datosGeneralesCuenta.jsp" tooltip="Onnix/WebContent/WEB-INF/pages/datosGeneralesCuenta.jsp">
-<persistable path="/Onnix/WebContent/WEB-INF/pages/datosGeneralesCuenta.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ComprasController.java" tooltip="Onnix/src/com/onnix/web/controller/ComprasController.java">
+<persistable path="/Onnix/src/com/onnix/web/controller/ComprasController.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ICuentasClientesDelegate.java" tooltip="Onnix/src/com/onnix/business/delegate/ICuentasClientesDelegate.java">
+<persistable path="/Onnix/src/com/onnix/business/delegate/ICuentasClientesDelegate.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ICuentasClientesManager.java" tooltip="Onnix/src/com/onnix/business/manager/ICuentasClientesManager.java">
+<persistable path="/Onnix/src/com/onnix/business/manager/ICuentasClientesManager.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ICuentasClientesDAO.java" tooltip="Onnix/src/com/onnix/business/dao/ICuentasClientesDAO.java">
+<persistable path="/Onnix/src/com/onnix/business/dao/ICuentasClientesDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="ViewTotales.hbm.xml" tooltip="Onnix/src/com/onnix/business/vo/ViewTotales.hbm.xml">
+<persistable path="/Onnix/src/com/onnix/business/vo/ViewTotales.hbm.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ViewTotalesVO.java" tooltip="Onnix/src/com/onnix/business/vo/ViewTotalesVO.java">
+<persistable path="/Onnix/src/com/onnix/business/vo/ViewTotalesVO.java"/>
 </file>
 </mruList>
 </workbench>

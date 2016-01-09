@@ -10,6 +10,9 @@
 	<form:hidden path="action"/>
 	<form:hidden path="idCliente"/>
 	<form:hidden path="idCuenta"/>
+	<form:hidden path="totalEntregado"/>
+	<form:hidden path="totalComprado"/>
+	<form:hidden path="resto"/>
 
 	<!-- PERMITE ACTIVAR LAS PESTAÑAS Y POSICIONAR, TRAS SUBMIT -->
 	<form:hidden path="openTabs"/>

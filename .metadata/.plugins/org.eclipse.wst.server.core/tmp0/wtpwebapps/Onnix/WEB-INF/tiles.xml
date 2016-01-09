@@ -78,6 +78,7 @@
 			<add-attribute value="/js/jquery/dataTable/jquery.dataTables.rowGrouping.js" />
 			<add-attribute value="/js/jquery/contextMenu/jquery.contextmenu.SGDR.js" />
 			<add-attribute value="/js/pages/onnix/cuentaCliente.js"/>
+			<add-attribute value="/js/pages/onnix/totales.js"/>
 			<add-attribute value="/js/pages/onnix/compras.js"/>
 			<add-attribute value="/js/pages/onnix/entregas.js"/>
 		</put-list-attribute>

@@ -44,6 +44,7 @@
     <property name="mappingResources">
 	<list>
 		<value>com/onnix/business/vo/ViewCuentasClientes.hbm.xml</value>
+		<value>com/onnix/business/vo/ViewTotales.hbm.xml</value>
 		<value>com/onnix/business/vo/Compra.hbm.xml</value>
 		<value>com/onnix/business/vo/Entrega.hbm.xml</value>
 		<value>com/onnix/business/vo/Cuenta.hbm.xml</value>

@@ -6,6 +6,7 @@ import com.onnix.business.delegate.ICuentasClientesDelegate;
 import com.onnix.business.manager.ICuentasClientesManager;
 import com.onnix.business.vo.ClienteVO;
 import com.onnix.business.vo.ViewCuentasClientesVO;
+import com.onnix.business.vo.ViewTotalesVO;
 
 public class CuentasClientesDelegateImpl implements ICuentasClientesDelegate {
 
@@ -23,6 +24,12 @@ public class CuentasClientesDelegateImpl implements ICuentasClientesDelegate {
 		
 	}
 	
+	@Override
+	public ViewTotalesVO loadById(ViewTotalesVO vo) {
+		return getCuentasClientesManager().loadById(vo);
+		
+	}
+
 	@Override
 	public List<ViewCuentasClientesVO> findByExample(ViewCuentasClientesVO vo) {
 		return getCuentasClientesManager().findByExample(vo);

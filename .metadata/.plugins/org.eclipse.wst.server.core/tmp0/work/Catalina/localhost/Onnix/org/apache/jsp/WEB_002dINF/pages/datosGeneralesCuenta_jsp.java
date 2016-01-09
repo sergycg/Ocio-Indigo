@@ -196,21 +196,21 @@ public final class datosGeneralesCuenta_jsp extends org.apache.jasper.runtime.Ht
       if (_jspx_meth_spring_005fmessage_005f12(_jspx_page_context))
         return;
       out.write("</b></label>\r\n");
-      out.write("\t\t\t\t<span><b>100</b></span>\r\n");
+      out.write("\t\t\t\t<span id=\"total_comprado\"><b></b></span>\r\n");
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t\t<div class=\"campo_100 top0\">\r\n");
       out.write("\t\t\t\t<label><b>");
       if (_jspx_meth_spring_005fmessage_005f13(_jspx_page_context))
         return;
       out.write("</b></label>\r\n");
-      out.write("\t\t\t\t<span><b>100</b></span>\r\n");
+      out.write("\t\t\t\t<span id=\"total_entregado\"><b></b></span>\r\n");
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t\t<div class=\"campo_40 margenDerecho0 top0\">\r\n");
       out.write("\t\t\t\t<label><b>");
       if (_jspx_meth_spring_005fmessage_005f14(_jspx_page_context))
         return;
       out.write("</b></label>\r\n");
-      out.write("\t\t\t\t<span><b>100</b></span>\r\n");
+      out.write("\t\t\t\t<span id=\"total_resto\"><b></b></span>\r\n");
       out.write("\t\t\t</div>\r\n");
       out.write("\t\t</div>\r\n");
       out.write("\t\t<div class=\"fin_float\"></div>\r\n");

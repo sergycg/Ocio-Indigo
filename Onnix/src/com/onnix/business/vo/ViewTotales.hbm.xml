@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!--     <class name="com.onnix.business.vo.ViewTotalesVO" table="vw_totales" catalog="pruebaJava"> -->
+ 
+ 	<class name="com.onnix.business.vo.ViewTotalesVO" table="vw_totales">
+ 		<composite-id>
+		 	<key-property name="idCliente" 	type="long" column="ID_CLIENTE"/>
+			<key-property name="idCuenta"	type="long" column="ID_CUENTA"/>
+		</composite-id>
+		
+		<property name="totalEntregado" 		type="float" column="TOTAL_ENTREGADO"/>
+		<property name="totalComprado" 			type="float" column="TOTAL_COMPRAS"/>
+		<property name="resto" 					type="float" column="RESTO"/>
+		
+    </class>
+</hibernate-mapping>

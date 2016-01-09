@@ -6,6 +6,7 @@ import com.onnix.business.dao.ICuentasClientesDAO;
 import com.onnix.business.manager.ICuentasClientesManager;
 import com.onnix.business.vo.ClienteVO;
 import com.onnix.business.vo.ViewCuentasClientesVO;
+import com.onnix.business.vo.ViewTotalesVO;
 
 public class CuentasClientesManagerImpl implements ICuentasClientesManager {
 
@@ -18,6 +19,12 @@ public class CuentasClientesManagerImpl implements ICuentasClientesManager {
 
 	@Override
 	public ViewCuentasClientesVO loadById(ViewCuentasClientesVO vo){
+		return getCuentasClientesDAO().loadById(vo);
+		
+	}
+
+	@Override
+	public ViewTotalesVO loadById(ViewTotalesVO vo) {
 		return getCuentasClientesDAO().loadById(vo);
 		
 	}

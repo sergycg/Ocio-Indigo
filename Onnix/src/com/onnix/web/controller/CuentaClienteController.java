@@ -2,6 +2,8 @@ package com.onnix.web.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
+import net.sf.json.JSONObject;
+
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -9,13 +11,17 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.onnix.business.constants.ConstantKeys;
 import com.onnix.business.delegate.ICuentasClientesDelegate;
-import com.onnix.business.exception.ModelException;
+import com.onnix.business.exception.ModelAjaxException;
 import com.onnix.business.utils.StringUtils;
 import com.onnix.business.vo.ClienteVO;
 import com.onnix.business.vo.ViewCuentasClientesVO;
+import com.onnix.business.vo.ViewTotalesVO;
+import com.onnix.web.beans.ViewTotalesBean;
 import com.onnix.web.forms.CuentaClienteForm;
 
 @Controller
@@ -124,7 +130,31 @@ public class CuentaClienteController {
 	
 		return view;
 	}
-	
+
+	@RequestMapping(value="/loadTotales", produces={ConstantKeys.CHARSET})
+    public @ResponseBody String loadTotales(Long idCliente, Long idCuenta) throws ModelAjaxException {
+		try{
+		
+			ViewTotalesBean totalesBean = null;
+			ViewTotalesVO totales= new ViewTotalesVO();
+			totales.setIdCliente(idCliente);
+			totales.setIdCuenta(idCuenta);
+			ViewTotalesVO totalesVO = getCuentasClientesDelegate().loadById(totales);
+			if (totalesVO!=null){
+				totalesBean = ViewTotalesBean.populate(totalesVO);
+			}
+			
+			JSONObject jsonObject = JSONObject.fromObject(totalesBean);			
+			
+			return jsonObject.toString();
+		}catch(Exception e){
+			logger.error("Error al obtener los totales de la cuenta: " + e);
+			logger.error(e.getMessage() + "Causa: " + e.getCause());
+			throw new ModelAjaxException(ConstantKeys.MESSAGE_ERROR_CONSULTA_TOTALES);
+		}
+    }
+
+
 	@RequestMapping(value = "/cuentaClienteForm", params="cancel")
 	public String cancel () throws Exception{
 		return "redirect:/initFindCuentas.htm";

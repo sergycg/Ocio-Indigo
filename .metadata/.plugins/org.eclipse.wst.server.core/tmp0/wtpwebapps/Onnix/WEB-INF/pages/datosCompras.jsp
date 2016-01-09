@@ -34,7 +34,7 @@
 			    </thead>
 			    <tbody></tbody>
 			</table>
-			<div style="margin-top: -20px;">Total:</div>
+			<div style="margin-top: -20px;">Total: <span id="total_tabla_compras"><b></b></span></div>
 		</div>
 
 		<div class="elementos_seccion" style="width:30%;float:right; " id="divListadoEntregas" style="display : block;">
@@ -55,7 +55,7 @@
 			    </thead>
 			    <tbody></tbody>
 			</table>
-			<div style="margin-top: -20px;">Total:</div>
+			<div style="margin-top: -20px;">Total:<span id="total_tabla_entregas"><b></b></span></div>
 			
 		</div>
 	

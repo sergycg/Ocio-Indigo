@@ -1,0 +1,41 @@
+INSERT INTO cliente VALUES
+(3,'Juanita2','Lopez2','Sangenjo 22','28034','912222222','666666666','','');
+
+
+
+-- tabla clientes
+
+SELECT datos_cliente.id, "INSERT INTO cliente VALUES
+("+Str(id)+",'"+  IIF(nombre<>null,nombre,'')+"','"+IIF(apellidos<>null,apellidos,'')+"','" + IIF(direccion<>null,direccion,'')+ "','" + 
+IIF(cod_postal<>null,cod_postal,'')+ "','" +IIF(telefono<>null,telefono,'')+ "','" + IIF(movil<>null,movil,'')+ "','" + IIF(otro<>null,otro,'')+ "','" + IIF(observaciones<>null,observaciones,'')+ "');"
+FROM datos_cliente
+ORDER BY datos_cliente.id;
+
+
+-- tabla entrega
+
+SELECT "INSERT INTO entrega (fecha, entrega, idCuenta) VALUES
+(str_to_date('"+Str(fecha)+"', '%d/%m/%Y')"+","+Str(entrega)+","+Str(id)+");"
+FROM datos_entregas;
+
+
+-- tabla compra
+
+SELECT datos_objetos.id, "INSERT INTO compra  (numFactura, codObjeto, descObjeto, fecha, precio, idCuenta) VALUES
+
+('"+num_factura+"', " + codigo +", TRIM('" + objeto + "'), " +  "str_to_date('"+Str(fecha)+"', '%d/%m/%Y'), " +Str(precio)+"," +Str(id)+");"
+FROM datos_objetos;
+
+-- tabla cuenta
+
+SELECT datos_cliente.id, "INSERT INTO cuenta (idCuenta, activa, fechaAlta, fechaModificacion, idCliente) VALUES
+("+Str(id)+", 1, str_to_date('"+Str(fecha_alta)+"', '%d/%m/%Y')"+", str_to_date('"+Str(ultima_modificacion)+"', '%d/%m/%Y'), "+Str(id)+");" AS Expr1
+FROM datos_cliente
+WHERE (((datos_cliente.[cancelada])=False))
+ORDER BY datos_cliente.id;
+
+SELECT datos_cliente.id, "INSERT INTO cuenta (idCuenta, activa, fechaAlta, fechaModificacion, idCliente) VALUES
+("+Str(id)+", 0, str_to_date('"+Str(fecha_alta)+"', '%d/%m/%Y')"+", str_to_date('"+Str(ultima_modificacion)+"', '%d/%m/%Y'), "+Str(id)+");" AS Expr1
+FROM datos_cliente
+WHERE (((datos_cliente.[cancelada])=True))
+ORDER BY datos_cliente.id;

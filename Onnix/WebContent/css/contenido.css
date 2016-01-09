@@ -882,7 +882,7 @@ input[type="text"], input[type="password"], input[type="datetime"], input[type="
 }
 
 li {
-  line-height: 5px !important;
+  line-height: 12px !important;
 }
 .ui-accordion-header {
   padding: 0.2em 0.5em .2em .7em !important;

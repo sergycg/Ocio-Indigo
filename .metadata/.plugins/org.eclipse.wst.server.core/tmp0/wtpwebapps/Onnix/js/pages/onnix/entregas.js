@@ -73,6 +73,7 @@ function modificarEntrega(id){
 			jQuery("#fechaEntrega").val(bean.fecha);
 			jQuery("#cantidad").val(bean.cantidad);
 			cargarFormularioEntrega("updateEntrega");
+			obtenerTotales();
 		}
 	});
 	
@@ -91,10 +92,13 @@ function guardarEntrega(){
 		success: function(bean){
 			jQuery("#form_crearEntrega").dialog("close");
 			obtenerListaEntregas();
+			obtenerTotales();
+		
 		}
 	});
 	
 }
+
 
 function borrarEntrega(idEntrega){
 	jQuery.ajax({
@@ -105,6 +109,7 @@ function borrarEntrega(idEntrega){
 		},
 		success: function(bean){
 			obtenerListaEntregas();
+			obtenerTotales();
 		}
 	});
 	

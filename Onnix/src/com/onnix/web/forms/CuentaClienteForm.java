@@ -26,6 +26,9 @@ public class CuentaClienteForm extends OnnixForm{
 	private String codigoPostal;
 	private String observaciones;
 	private Integer activo;
+	private Float totalEntregado;
+	private Float totalComprado;
+	private Float resto;
 	
 	private CompraForm compraForm;
 	private EntregaForm entregaForm;
@@ -47,6 +50,9 @@ public class CuentaClienteForm extends OnnixForm{
 		this.codigoPostal = vo.getCodPostal();
 		this.observaciones = vo.getObservacionesCliente();
 		this.activo = vo.getIndActiva();
+		this.totalEntregado = vo.getTotalEntregado();
+		this.totalComprado = vo.getTotalComprado();
+		this.resto = vo.getResto();
 	}
 	
 	public void set(ClienteVO vo) {
@@ -168,6 +174,30 @@ public class CuentaClienteForm extends OnnixForm{
 	}
 	public void setDireccion(String direccion) {
 		this.direccion = direccion;
+	}
+
+	public Float getTotalEntregado() {
+		return totalEntregado;
+	}
+
+	public void setTotalEntregado(Float totalEntregado) {
+		this.totalEntregado = totalEntregado;
+	}
+
+	public Float getTotalComprado() {
+		return totalComprado;
+	}
+
+	public void setTotalComprado(Float totalComprado) {
+		this.totalComprado = totalComprado;
+	}
+
+	public Float getResto() {
+		return resto;
+	}
+
+	public void setResto(Float resto) {
+		this.resto = resto;
 	}
 
 	

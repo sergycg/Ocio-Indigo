@@ -130,16 +130,31 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
           out.write('	');
           if (_jspx_meth_form_005fhidden_005f2(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
-          out.write("\r\n");
-          out.write("\r\n");
-          out.write("\t<!-- PERMITE ACTIVAR LAS PESTAÑAS Y POSICIONAR, TRAS SUBMIT -->\r\n");
-          out.write("\t");
+          out.write('\r');
+          out.write('\n');
+          out.write('	');
           if (_jspx_meth_form_005fhidden_005f3(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
           out.write('\r');
           out.write('\n');
           out.write('	');
           if (_jspx_meth_form_005fhidden_005f4(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
+            return true;
+          out.write('\r');
+          out.write('\n');
+          out.write('	');
+          if (_jspx_meth_form_005fhidden_005f5(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
+            return true;
+          out.write("\r\n");
+          out.write("\r\n");
+          out.write("\t<!-- PERMITE ACTIVAR LAS PESTAÑAS Y POSICIONAR, TRAS SUBMIT -->\r\n");
+          out.write("\t");
+          if (_jspx_meth_form_005fhidden_005f6(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
+            return true;
+          out.write('\r');
+          out.write('\n');
+          out.write('	');
+          if (_jspx_meth_form_005fhidden_005f7(_jspx_th_form_005fform_005f0, _jspx_page_context, _jspx_push_body_count_form_005fform_005f0))
             return true;
           out.write("\r\n");
           out.write("\t<!-- PERMITE POSICIONAR LA PESTAÑA QUE SE HA PINCHADO -->\r\n");
@@ -289,8 +304,8 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
     org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f3 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_0026_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
     _jspx_th_form_005fhidden_005f3.setPageContext(_jspx_page_context);
     _jspx_th_form_005fhidden_005f3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/pages/editCuentaCliente.jsp(15,1) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_form_005fhidden_005f3.setPath("openTabs");
+    // /WEB-INF/pages/editCuentaCliente.jsp(13,1) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fhidden_005f3.setPath("totalEntregado");
     int[] _jspx_push_body_count_form_005fhidden_005f3 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fhidden_005f3 = _jspx_th_form_005fhidden_005f3.doStartTag();
@@ -316,8 +331,8 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
     org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f4 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_0026_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
     _jspx_th_form_005fhidden_005f4.setPageContext(_jspx_page_context);
     _jspx_th_form_005fhidden_005f4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/pages/editCuentaCliente.jsp(16,1) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
-    _jspx_th_form_005fhidden_005f4.setPath("activeTab");
+    // /WEB-INF/pages/editCuentaCliente.jsp(14,1) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fhidden_005f4.setPath("totalComprado");
     int[] _jspx_push_body_count_form_005fhidden_005f4 = new int[] { 0 };
     try {
       int _jspx_eval_form_005fhidden_005f4 = _jspx_th_form_005fhidden_005f4.doStartTag();
@@ -335,6 +350,87 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
     return false;
   }
 
+  private boolean _jspx_meth_form_005fhidden_005f5(javax.servlet.jsp.tagext.JspTag _jspx_th_form_005fform_005f0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_005fform_005f0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f5 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_0026_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_005fhidden_005f5.setPageContext(_jspx_page_context);
+    _jspx_th_form_005fhidden_005f5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
+    // /WEB-INF/pages/editCuentaCliente.jsp(15,1) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fhidden_005f5.setPath("resto");
+    int[] _jspx_push_body_count_form_005fhidden_005f5 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_005fhidden_005f5 = _jspx_th_form_005fhidden_005f5.doStartTag();
+      if (_jspx_th_form_005fhidden_005f5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_005fhidden_005f5[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_005fhidden_005f5.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_005fhidden_005f5.doFinally();
+      _005fjspx_005ftagPool_005fform_005fhidden_0026_005fpath_005fnobody.reuse(_jspx_th_form_005fhidden_005f5);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_005fhidden_005f6(javax.servlet.jsp.tagext.JspTag _jspx_th_form_005fform_005f0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_005fform_005f0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f6 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_0026_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_005fhidden_005f6.setPageContext(_jspx_page_context);
+    _jspx_th_form_005fhidden_005f6.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
+    // /WEB-INF/pages/editCuentaCliente.jsp(18,1) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fhidden_005f6.setPath("openTabs");
+    int[] _jspx_push_body_count_form_005fhidden_005f6 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_005fhidden_005f6 = _jspx_th_form_005fhidden_005f6.doStartTag();
+      if (_jspx_th_form_005fhidden_005f6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_005fhidden_005f6[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_005fhidden_005f6.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_005fhidden_005f6.doFinally();
+      _005fjspx_005ftagPool_005fform_005fhidden_0026_005fpath_005fnobody.reuse(_jspx_th_form_005fhidden_005f6);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_005fhidden_005f7(javax.servlet.jsp.tagext.JspTag _jspx_th_form_005fform_005f0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_005fform_005f0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_005fhidden_005f7 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _005fjspx_005ftagPool_005fform_005fhidden_0026_005fpath_005fnobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_005fhidden_005f7.setPageContext(_jspx_page_context);
+    _jspx_th_form_005fhidden_005f7.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
+    // /WEB-INF/pages/editCuentaCliente.jsp(19,1) name = path type = null reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    _jspx_th_form_005fhidden_005f7.setPath("activeTab");
+    int[] _jspx_push_body_count_form_005fhidden_005f7 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_005fhidden_005f7 = _jspx_th_form_005fhidden_005f7.doStartTag();
+      if (_jspx_th_form_005fhidden_005f7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_005fhidden_005f7[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_005fhidden_005f7.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_005fhidden_005f7.doFinally();
+      _005fjspx_005ftagPool_005fform_005fhidden_0026_005fpath_005fnobody.reuse(_jspx_th_form_005fhidden_005f7);
+    }
+    return false;
+  }
+
   private boolean _jspx_meth_spring_005fmessage_005f0(javax.servlet.jsp.tagext.JspTag _jspx_th_form_005fform_005f0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_005fform_005f0)
           throws Throwable {
     PageContext pageContext = _jspx_page_context;
@@ -343,7 +439,7 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
     org.springframework.web.servlet.tags.MessageTag _jspx_th_spring_005fmessage_005f0 = (org.springframework.web.servlet.tags.MessageTag) _005fjspx_005ftagPool_005fspring_005fmessage_0026_005fcode_005fnobody.get(org.springframework.web.servlet.tags.MessageTag.class);
     _jspx_th_spring_005fmessage_005f0.setPageContext(_jspx_page_context);
     _jspx_th_spring_005fmessage_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/pages/editCuentaCliente.jsp(23,6) name = code type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/editCuentaCliente.jsp(26,6) name = code type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_spring_005fmessage_005f0.setCode("title.detalle.cuenta");
     int[] _jspx_push_body_count_spring_005fmessage_005f0 = new int[] { 0 };
     try {
@@ -370,7 +466,7 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
     org.springframework.web.servlet.tags.MessageTag _jspx_th_spring_005fmessage_005f1 = (org.springframework.web.servlet.tags.MessageTag) _005fjspx_005ftagPool_005fspring_005fmessage_0026_005fcode_005fnobody.get(org.springframework.web.servlet.tags.MessageTag.class);
     _jspx_th_spring_005fmessage_005f1.setPageContext(_jspx_page_context);
     _jspx_th_spring_005fmessage_005f1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/pages/editCuentaCliente.jsp(26,6) name = code type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/editCuentaCliente.jsp(29,6) name = code type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_spring_005fmessage_005f1.setCode("label.codigo.cuenta");
     int[] _jspx_push_body_count_spring_005fmessage_005f1 = new int[] { 0 };
     try {
@@ -397,7 +493,7 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
     org.springframework.web.servlet.tags.MessageTag _jspx_th_spring_005fmessage_005f2 = (org.springframework.web.servlet.tags.MessageTag) _005fjspx_005ftagPool_005fspring_005fmessage_0026_005fcode_005fnobody.get(org.springframework.web.servlet.tags.MessageTag.class);
     _jspx_th_spring_005fmessage_005f2.setPageContext(_jspx_page_context);
     _jspx_th_spring_005fmessage_005f2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/pages/editCuentaCliente.jsp(30,6) name = code type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/editCuentaCliente.jsp(33,6) name = code type = null reqTime = true required = false fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_spring_005fmessage_005f2.setCode("label.codigo.cliente");
     int[] _jspx_push_body_count_spring_005fmessage_005f2 = new int[] { 0 };
     try {
@@ -425,7 +521,7 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
     org.apache.jasper.runtime.AnnotationHelper.postConstruct(_jsp_annotationprocessor, _jspx_th_tiles_005finsertDefinition_005f0);
     _jspx_th_tiles_005finsertDefinition_005f0.setJspContext(_jspx_page_context);
     _jspx_th_tiles_005finsertDefinition_005f0.setParent(_jspx_th_form_005fform_005f0);
-    // /WEB-INF/pages/editCuentaCliente.jsp(35,4) name = name type = java.lang.String reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/editCuentaCliente.jsp(38,4) name = name type = java.lang.String reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_tiles_005finsertDefinition_005f0.setName("datosGeneralesCuenta");
     _jspx_th_tiles_005finsertDefinition_005f0.doTag();
     org.apache.jasper.runtime.AnnotationHelper.preDestroy(_jsp_annotationprocessor, _jspx_th_tiles_005finsertDefinition_005f0);
@@ -440,7 +536,7 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
     org.apache.taglibs.standard.tag.rt.core.IfTag _jspx_th_c_005fif_005f0 = (org.apache.taglibs.standard.tag.rt.core.IfTag) _005fjspx_005ftagPool_005fc_005fif_0026_005ftest.get(org.apache.taglibs.standard.tag.rt.core.IfTag.class);
     _jspx_th_c_005fif_005f0.setPageContext(_jspx_page_context);
     _jspx_th_c_005fif_005f0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_005fform_005f0);
-    // /WEB-INF/pages/editCuentaCliente.jsp(36,4) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/editCuentaCliente.jsp(39,4) name = test type = boolean reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_c_005fif_005f0.setTest(((java.lang.Boolean) org.apache.jasper.runtime.PageContextImpl.proprietaryEvaluate("${not empty cuentaClienteForm.idCliente && not empty cuentaClienteForm.idCuenta}", java.lang.Boolean.class, (PageContext)_jspx_page_context, null, false)).booleanValue());
     int _jspx_eval_c_005fif_005f0 = _jspx_th_c_005fif_005f0.doStartTag();
     if (_jspx_eval_c_005fif_005f0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
@@ -474,7 +570,7 @@ public final class editCuentaCliente_jsp extends org.apache.jasper.runtime.HttpJ
     org.apache.jasper.runtime.AnnotationHelper.postConstruct(_jsp_annotationprocessor, _jspx_th_tiles_005finsertDefinition_005f1);
     _jspx_th_tiles_005finsertDefinition_005f1.setJspContext(_jspx_page_context);
     _jspx_th_tiles_005finsertDefinition_005f1.setParent(_jspx_th_c_005fif_005f0);
-    // /WEB-INF/pages/editCuentaCliente.jsp(37,5) name = name type = java.lang.String reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
+    // /WEB-INF/pages/editCuentaCliente.jsp(40,5) name = name type = java.lang.String reqTime = true required = true fragment = false deferredValue = false expectedTypeName = null deferredMethod = false methodSignature = null
     _jspx_th_tiles_005finsertDefinition_005f1.setName("datosCompras");
     _jspx_th_tiles_005finsertDefinition_005f1.doTag();
     org.apache.jasper.runtime.AnnotationHelper.preDestroy(_jsp_annotationprocessor, _jspx_th_tiles_005finsertDefinition_005f1);

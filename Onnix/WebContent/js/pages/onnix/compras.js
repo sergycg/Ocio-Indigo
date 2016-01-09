@@ -77,6 +77,7 @@ function modificarCompra(id){
 			jQuery("#fechaCompra").val(bean.fecha);
 			jQuery("#precio").val(bean.precio);
 			cargarFormularioCompra("updateCompra");
+			obtenerTotales();
 		}
 	});
 	
@@ -96,6 +97,7 @@ function guardarCompra(){
 		success: function(bean){
 			jQuery("#form_crearCompra").dialog("close");
 			obtenerListaCompras();
+			obtenerTotales();
 		}
 	});
 	
@@ -110,6 +112,7 @@ function borrarCompra(idCompra){
 		},
 		success: function(bean){
 			obtenerListaCompras();
+			obtenerTotales();
 		}
 	});
 	
